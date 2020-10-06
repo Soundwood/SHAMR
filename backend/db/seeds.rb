@@ -7,30 +7,25 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-TwitterProfile.create(username: 'realdonaldtrump', display_name: 'Donald J. Trump', id: 25073877) 
-TwitterProfile.create(username: 'BarackObama', display_name: 'Barack Obama')
+TwitterProfile.create(username: 'realdonaldtrump', display_name: 'Donald J. Trump', user_id: 25073877, protected: true) 
+TwitterProfile.create(username: 'barackobama', display_name: 'Barack Obama')
 TwitterProfile.create(username: 'katyperry', display_name: 'Katy Perry')
 TwitterProfile.create(username: 'rihanna', display_name: 'Rihanna')
 TwitterProfile.create(username: 'justinbieber', display_name: 'Justin Bieber')
-TwitterProfile.create(username: 'taylorswift13', display_name: 'Taylor Swift')
+TwitterProfile.create(username: 'taylorswift13', display_name: 'Taylor Swift', offender: true)
 TwitterProfile.create(username: 'TheEllenShow', display_name: 'Ellen DeGeneres')
-TwitterProfile.create(username: 'KimKardashian', display_name: 'Kim Kardashian')
-TwitterProfile.create(username: 'BillGates', display_name: 'Bill Gates')
-TwitterProfile.create(username: 'justinbieber', display_name: 'Justin Bieber')
+TwitterProfile.create(username: 'kimkardashian', display_name: 'Kim Kardashian')
+TwitterProfile.create(username: 'billgates', display_name: 'Bill Gates')
+TwitterProfile.create(username: 'elonmusk', display_name: 'Elon Musk', offender: true)
+TwitterProfile.create(username: 'britneyspears', display_name: 'Britney Spears')
+TwitterProfile.create(username: 'shakira', display_name: 'Shakira')
 
 
 OffenseCategory.create(name: 'none')
-
-
-5	Steady	@Cristiano	Cristiano Ronaldo	88	Footballer
-8	Steady	@ladygaga	Lady Gaga	82	Musician and actress
-10	Steady	@ArianaGrande	Ariana Grande	77	Musician and actress
-11	Steady	@YouTube	YouTube	72	Online video platform
-13	Steady	@jtimberlake	Justin Timberlake	64	Musician and actor
-14	Steady	@selenagomez	Selena Gomez	63	Musician and actress
-15	Steady	@narendramodi	Narendra Modi	63	Current Prime Minister of India
-16	Steady	@cnnbrk	CNN Breaking News	59	News channel
-17	Steady	@twitter	Twitter	58	Social media platform
-18	Steady	@britneyspears	Britney Spears	56	Musician
-19	Steady	@ddlovato	Demi Lovato	56	Musician
-20	Steady	@shakira	Shakira
+OffenseCategory.create(name: 'use of customary units of measure')
+OffenseCategory.create(name: 'incorrect pronunciation of gif')
+OffenseCategory.create(name: 'does not include /s for sarcasm')
+OffenseCategory.create(name: 'mows their lawn before 8AM')
+OffenseCategory.create(name: 'slow-walker')
+OffenseCategory.create(name: 'not using turn indicator')
+OffenseCategory.create(name: 'loud chewer')

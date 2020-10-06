@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_05_200727) do
+ActiveRecord::Schema.define(version: 2020_10_06_013350) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,8 +19,6 @@ ActiveRecord::Schema.define(version: 2020_10_05_200727) do
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.bigint "twitter_profile_id", null: false
-    t.index ["twitter_profile_id"], name: "index_offense_categories_on_twitter_profile_id"
   end
 
   create_table "profile_offenses", force: :cascade do |t|
@@ -42,7 +40,6 @@ ActiveRecord::Schema.define(version: 2020_10_05_200727) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "offense_categories", "twitter_profiles"
   add_foreign_key "profile_offenses", "offense_categories"
   add_foreign_key "profile_offenses", "twitter_profiles"
 end

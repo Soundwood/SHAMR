@@ -119,3 +119,962 @@ FOREIGN KEY ("offense_category_id")
   [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4552537367984208015)[0m
   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTwitterProfile Load (0.9ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (1.3ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("id", "username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 25073877], ["username", "realdonaldtrump"], ["display_name", "Donald J. Trump"], ["created_at", "2020-10-06 01:17:34.805040"], ["updated_at", "2020-10-06 01:17:34.805040"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.3ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "BarackObama"], ["display_name", "Barack Obama"], ["created_at", "2020-10-06 01:17:34.815238"], ["updated_at", "2020-10-06 01:17:34.815238"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "katyperry"], ["display_name", "Katy Perry"], ["created_at", "2020-10-06 01:17:34.819151"], ["updated_at", "2020-10-06 01:17:34.819151"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "rihanna"], ["display_name", "Rihanna"], ["created_at", "2020-10-06 01:17:34.821907"], ["updated_at", "2020-10-06 01:17:34.821907"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "justinbieber"], ["display_name", "Justin Bieber"], ["created_at", "2020-10-06 01:17:34.824576"], ["updated_at", "2020-10-06 01:17:34.824576"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "taylorswift13"], ["display_name", "Taylor Swift"], ["created_at", "2020-10-06 01:17:34.827177"], ["updated_at", "2020-10-06 01:17:34.827177"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "TheEllenShow"], ["display_name", "Ellen DeGeneres"], ["created_at", "2020-10-06 01:17:34.829686"], ["updated_at", "2020-10-06 01:17:34.829686"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "KimKardashian"], ["display_name", "Kim Kardashian"], ["created_at", "2020-10-06 01:17:34.832387"], ["updated_at", "2020-10-06 01:17:34.832387"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "BillGates"], ["display_name", "Bill Gates"], ["created_at", "2020-10-06 01:17:34.834944"], ["updated_at", "2020-10-06 01:17:34.834944"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Elon Musk"], ["display_name", "Elon Musk"], ["created_at", "2020-10-06 01:17:34.837597"], ["updated_at", "2020-10-06 01:17:34.837597"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Britney Spears"], ["display_name", "britneyspears"], ["created_at", "2020-10-06 01:17:34.840207"], ["updated_at", "2020-10-06 01:17:34.840207"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Britney Spears"], ["display_name", "britneyspears"], ["created_at", "2020-10-06 01:17:34.842780"], ["updated_at", "2020-10-06 01:17:34.842780"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOffenseCategory Create (1.8ms)[0m  [1m[32mINSERT INTO "offense_categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "none"], ["created_at", "2020-10-06 01:17:34.854110"], ["updated_at", "2020-10-06 01:17:34.854110"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (6.0ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("id", "username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 25073877], ["username", "realdonaldtrump"], ["display_name", "Donald J. Trump"], ["created_at", "2020-10-06 01:20:25.197280"], ["updated_at", "2020-10-06 01:20:25.197280"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (41.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "SHAMR_development"[0m
+  [1m[35m (28.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "SHAMR_test"[0m
+  [1m[35m (132.0ms)[0m  [1m[35mCREATE DATABASE "SHAMR_development" ENCODING = 'unicode'[0m
+  [1m[35m (57.7ms)[0m  [1m[35mCREATE DATABASE "SHAMR_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "offense_categories" CASCADE[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "offense_categories" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "twitter_profile_id" bigint NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX  "index_offense_categories_on_twitter_profile_id" ON "offense_categories"  ("twitter_profile_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "profile_offenses" CASCADE[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "profile_offenses" ("id" bigserial primary key, "twitter_profile_id" bigint NOT NULL, "offense_category_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX  "index_profile_offenses_on_offense_category_id" ON "profile_offenses"  ("offense_category_id")[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX  "index_profile_offenses_on_twitter_profile_id" ON "profile_offenses"  ("twitter_profile_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "twitter_profiles" CASCADE[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "twitter_profiles" ("id" bigserial primary key, "username" character varying, "user_id" integer, "display_name" character varying, "offender" boolean, "protected" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "offense_categories" ADD CONSTRAINT "fk_rails_0d0192667b"
+FOREIGN KEY ("twitter_profile_id")
+  REFERENCES "twitter_profiles" ("id")
+[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "profile_offenses" ADD CONSTRAINT "fk_rails_a7c1ec5062"
+FOREIGN KEY ("offense_category_id")
+  REFERENCES "offense_categories" ("id")
+[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "profile_offenses" ADD CONSTRAINT "fk_rails_1a2f0c292c"
+FOREIGN KEY ("twitter_profile_id")
+  REFERENCES "twitter_profiles" ("id")
+[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201005200727)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201005195056),
+(20201005195539),
+(20201005200007);
+
+[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-10-06 01:21:15.801267"], ["updated_at", "2020-10-06 01:21:15.801267"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "1f8a19c000dba5e8f0b67868be227bd4ea87e901"], ["created_at", "2020-10-06 01:21:15.807829"], ["updated_at", "2020-10-06 01:21:15.807829"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "offense_categories" CASCADE[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "offense_categories" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "twitter_profile_id" bigint NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_offense_categories_on_twitter_profile_id" ON "offense_categories"  ("twitter_profile_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "profile_offenses" CASCADE[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "profile_offenses" ("id" bigserial primary key, "twitter_profile_id" bigint NOT NULL, "offense_category_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX  "index_profile_offenses_on_offense_category_id" ON "profile_offenses"  ("offense_category_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_profile_offenses_on_twitter_profile_id" ON "profile_offenses"  ("twitter_profile_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "twitter_profiles" CASCADE[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "twitter_profiles" ("id" bigserial primary key, "username" character varying, "user_id" integer, "display_name" character varying, "offender" boolean, "protected" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mALTER TABLE "offense_categories" ADD CONSTRAINT "fk_rails_0d0192667b"
+FOREIGN KEY ("twitter_profile_id")
+  REFERENCES "twitter_profiles" ("id")
+[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "profile_offenses" ADD CONSTRAINT "fk_rails_a7c1ec5062"
+FOREIGN KEY ("offense_category_id")
+  REFERENCES "offense_categories" ("id")
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "profile_offenses" ADD CONSTRAINT "fk_rails_1a2f0c292c"
+FOREIGN KEY ("twitter_profile_id")
+  REFERENCES "twitter_profiles" ("id")
+[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201005200727)[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201005195056),
+(20201005195539),
+(20201005200007);
+
+[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-10-06 01:21:15.865520"], ["updated_at", "2020-10-06 01:21:15.865520"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2020-10-06 01:21:15.869954"], ["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "1f8a19c000dba5e8f0b67868be227bd4ea87e901"], ["created_at", "2020-10-06 01:21:15.874356"], ["updated_at", "2020-10-06 01:21:15.874356"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.6ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("id", "username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 25073877], ["username", "realdonaldtrump"], ["display_name", "Donald J. Trump"], ["created_at", "2020-10-06 01:21:15.910537"], ["updated_at", "2020-10-06 01:21:15.910537"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "BarackObama"], ["display_name", "Barack Obama"], ["created_at", "2020-10-06 01:21:15.914323"], ["updated_at", "2020-10-06 01:21:15.914323"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "katyperry"], ["display_name", "Katy Perry"], ["created_at", "2020-10-06 01:21:15.927694"], ["updated_at", "2020-10-06 01:21:15.927694"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "rihanna"], ["display_name", "Rihanna"], ["created_at", "2020-10-06 01:21:15.930490"], ["updated_at", "2020-10-06 01:21:15.930490"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "justinbieber"], ["display_name", "Justin Bieber"], ["created_at", "2020-10-06 01:21:15.933105"], ["updated_at", "2020-10-06 01:21:15.933105"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "taylorswift13"], ["display_name", "Taylor Swift"], ["created_at", "2020-10-06 01:21:15.935745"], ["updated_at", "2020-10-06 01:21:15.935745"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "TheEllenShow"], ["display_name", "Ellen DeGeneres"], ["created_at", "2020-10-06 01:21:15.938526"], ["updated_at", "2020-10-06 01:21:15.938526"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "KimKardashian"], ["display_name", "Kim Kardashian"], ["created_at", "2020-10-06 01:21:15.941263"], ["updated_at", "2020-10-06 01:21:15.941263"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "BillGates"], ["display_name", "Bill Gates"], ["created_at", "2020-10-06 01:21:15.943923"], ["updated_at", "2020-10-06 01:21:15.943923"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Elon Musk"], ["display_name", "Elon Musk"], ["created_at", "2020-10-06 01:21:15.946566"], ["updated_at", "2020-10-06 01:21:15.946566"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.4ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Britney Spears"], ["display_name", "britneyspears"], ["created_at", "2020-10-06 01:21:15.949284"], ["updated_at", "2020-10-06 01:21:15.949284"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Britney Spears"], ["display_name", "britneyspears"], ["created_at", "2020-10-06 01:21:15.952619"], ["updated_at", "2020-10-06 01:21:15.952619"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.3ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "user_id", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "realdonaldtrump"], ["user_id", 25073877], ["display_name", "Donald J. Trump"], ["created_at", "2020-10-06 01:22:25.216601"], ["updated_at", "2020-10-06 01:22:25.216601"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "BarackObama"], ["display_name", "Barack Obama"], ["created_at", "2020-10-06 01:22:25.220405"], ["updated_at", "2020-10-06 01:22:25.220405"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "katyperry"], ["display_name", "Katy Perry"], ["created_at", "2020-10-06 01:22:25.223412"], ["updated_at", "2020-10-06 01:22:25.223412"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "rihanna"], ["display_name", "Rihanna"], ["created_at", "2020-10-06 01:22:25.230605"], ["updated_at", "2020-10-06 01:22:25.230605"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "justinbieber"], ["display_name", "Justin Bieber"], ["created_at", "2020-10-06 01:22:25.237628"], ["updated_at", "2020-10-06 01:22:25.237628"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "taylorswift13"], ["display_name", "Taylor Swift"], ["created_at", "2020-10-06 01:22:25.240347"], ["updated_at", "2020-10-06 01:22:25.240347"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "TheEllenShow"], ["display_name", "Ellen DeGeneres"], ["created_at", "2020-10-06 01:22:25.242860"], ["updated_at", "2020-10-06 01:22:25.242860"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "KimKardashian"], ["display_name", "Kim Kardashian"], ["created_at", "2020-10-06 01:22:25.245507"], ["updated_at", "2020-10-06 01:22:25.245507"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "BillGates"], ["display_name", "Bill Gates"], ["created_at", "2020-10-06 01:22:25.247992"], ["updated_at", "2020-10-06 01:22:25.247992"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Elon Musk"], ["display_name", "Elon Musk"], ["created_at", "2020-10-06 01:22:25.250440"], ["updated_at", "2020-10-06 01:22:25.250440"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Britney Spears"], ["display_name", "britneyspears"], ["created_at", "2020-10-06 01:22:25.252896"], ["updated_at", "2020-10-06 01:22:25.252896"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Britney Spears"], ["display_name", "britneyspears"], ["created_at", "2020-10-06 01:22:25.255288"], ["updated_at", "2020-10-06 01:22:25.255288"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (27.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "SHAMR_development"[0m
+  [1m[35m (21.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "SHAMR_test"[0m
+  [1m[35m (53.3ms)[0m  [1m[35mCREATE DATABASE "SHAMR_development" ENCODING = 'unicode'[0m
+  [1m[35m (56.0ms)[0m  [1m[35mCREATE DATABASE "SHAMR_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "offense_categories" CASCADE[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "offense_categories" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "twitter_profile_id" bigint NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_offense_categories_on_twitter_profile_id" ON "offense_categories"  ("twitter_profile_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "profile_offenses" CASCADE[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "profile_offenses" ("id" bigserial primary key, "twitter_profile_id" bigint NOT NULL, "offense_category_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_profile_offenses_on_offense_category_id" ON "profile_offenses"  ("offense_category_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_profile_offenses_on_twitter_profile_id" ON "profile_offenses"  ("twitter_profile_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "twitter_profiles" CASCADE[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "twitter_profiles" ("id" bigserial primary key, "username" character varying, "user_id" integer, "display_name" character varying, "offender" boolean, "protected" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "offense_categories" ADD CONSTRAINT "fk_rails_0d0192667b"
+FOREIGN KEY ("twitter_profile_id")
+  REFERENCES "twitter_profiles" ("id")
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "profile_offenses" ADD CONSTRAINT "fk_rails_a7c1ec5062"
+FOREIGN KEY ("offense_category_id")
+  REFERENCES "offense_categories" ("id")
+[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "profile_offenses" ADD CONSTRAINT "fk_rails_1a2f0c292c"
+FOREIGN KEY ("twitter_profile_id")
+  REFERENCES "twitter_profiles" ("id")
+[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201005200727)[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201005195056),
+(20201005195539),
+(20201005200007);
+
+[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-10-06 01:22:46.255394"], ["updated_at", "2020-10-06 01:22:46.255394"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "1f8a19c000dba5e8f0b67868be227bd4ea87e901"], ["created_at", "2020-10-06 01:22:46.260560"], ["updated_at", "2020-10-06 01:22:46.260560"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "offense_categories" CASCADE[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "offense_categories" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "twitter_profile_id" bigint NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX  "index_offense_categories_on_twitter_profile_id" ON "offense_categories"  ("twitter_profile_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "profile_offenses" CASCADE[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "profile_offenses" ("id" bigserial primary key, "twitter_profile_id" bigint NOT NULL, "offense_category_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX  "index_profile_offenses_on_offense_category_id" ON "profile_offenses"  ("offense_category_id")[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX  "index_profile_offenses_on_twitter_profile_id" ON "profile_offenses"  ("twitter_profile_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "twitter_profiles" CASCADE[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "twitter_profiles" ("id" bigserial primary key, "username" character varying, "user_id" integer, "display_name" character varying, "offender" boolean, "protected" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "offense_categories" ADD CONSTRAINT "fk_rails_0d0192667b"
+FOREIGN KEY ("twitter_profile_id")
+  REFERENCES "twitter_profiles" ("id")
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "profile_offenses" ADD CONSTRAINT "fk_rails_a7c1ec5062"
+FOREIGN KEY ("offense_category_id")
+  REFERENCES "offense_categories" ("id")
+[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "profile_offenses" ADD CONSTRAINT "fk_rails_1a2f0c292c"
+FOREIGN KEY ("twitter_profile_id")
+  REFERENCES "twitter_profiles" ("id")
+[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201005200727)[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201005195056),
+(20201005195539),
+(20201005200007);
+
+[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-10-06 01:22:46.309640"], ["updated_at", "2020-10-06 01:22:46.309640"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2020-10-06 01:22:46.313977"], ["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "1f8a19c000dba5e8f0b67868be227bd4ea87e901"], ["created_at", "2020-10-06 01:22:46.317889"], ["updated_at", "2020-10-06 01:22:46.317889"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.5ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "user_id", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "realdonaldtrump"], ["user_id", 25073877], ["display_name", "Donald J. Trump"], ["created_at", "2020-10-06 01:22:46.361898"], ["updated_at", "2020-10-06 01:22:46.361898"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "BarackObama"], ["display_name", "Barack Obama"], ["created_at", "2020-10-06 01:22:46.365281"], ["updated_at", "2020-10-06 01:22:46.365281"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "katyperry"], ["display_name", "Katy Perry"], ["created_at", "2020-10-06 01:22:46.367901"], ["updated_at", "2020-10-06 01:22:46.367901"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "rihanna"], ["display_name", "Rihanna"], ["created_at", "2020-10-06 01:22:46.370378"], ["updated_at", "2020-10-06 01:22:46.370378"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "justinbieber"], ["display_name", "Justin Bieber"], ["created_at", "2020-10-06 01:22:46.372789"], ["updated_at", "2020-10-06 01:22:46.372789"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "taylorswift13"], ["display_name", "Taylor Swift"], ["created_at", "2020-10-06 01:22:46.375159"], ["updated_at", "2020-10-06 01:22:46.375159"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "TheEllenShow"], ["display_name", "Ellen DeGeneres"], ["created_at", "2020-10-06 01:22:46.377506"], ["updated_at", "2020-10-06 01:22:46.377506"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "KimKardashian"], ["display_name", "Kim Kardashian"], ["created_at", "2020-10-06 01:22:46.379932"], ["updated_at", "2020-10-06 01:22:46.379932"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "BillGates"], ["display_name", "Bill Gates"], ["created_at", "2020-10-06 01:22:46.382311"], ["updated_at", "2020-10-06 01:22:46.382311"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Elon Musk"], ["display_name", "Elon Musk"], ["created_at", "2020-10-06 01:22:46.384727"], ["updated_at", "2020-10-06 01:22:46.384727"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Britney Spears"], ["display_name", "britneyspears"], ["created_at", "2020-10-06 01:22:46.387389"], ["updated_at", "2020-10-06 01:22:46.387389"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Britney Spears"], ["display_name", "britneyspears"], ["created_at", "2020-10-06 01:22:46.390069"], ["updated_at", "2020-10-06 01:22:46.390069"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOffenseCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "offense_categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "none"], ["created_at", "2020-10-06 01:22:46.399086"], ["updated_at", "2020-10-06 01:22:46.399086"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (26.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "SHAMR_development"[0m
+  [1m[35m (21.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "SHAMR_test"[0m
+  [1m[35m (53.4ms)[0m  [1m[35mCREATE DATABASE "SHAMR_development" ENCODING = 'unicode'[0m
+  [1m[35m (55.4ms)[0m  [1m[35mCREATE DATABASE "SHAMR_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "offense_categories" CASCADE[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "offense_categories" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "twitter_profile_id" bigint NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX  "index_offense_categories_on_twitter_profile_id" ON "offense_categories"  ("twitter_profile_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "profile_offenses" CASCADE[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "profile_offenses" ("id" bigserial primary key, "twitter_profile_id" bigint NOT NULL, "offense_category_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX  "index_profile_offenses_on_offense_category_id" ON "profile_offenses"  ("offense_category_id")[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX  "index_profile_offenses_on_twitter_profile_id" ON "profile_offenses"  ("twitter_profile_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "twitter_profiles" CASCADE[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "twitter_profiles" ("id" bigserial primary key, "username" character varying, "user_id" integer, "display_name" character varying, "offender" boolean, "protected" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "offense_categories" ADD CONSTRAINT "fk_rails_0d0192667b"
+FOREIGN KEY ("twitter_profile_id")
+  REFERENCES "twitter_profiles" ("id")
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "profile_offenses" ADD CONSTRAINT "fk_rails_a7c1ec5062"
+FOREIGN KEY ("offense_category_id")
+  REFERENCES "offense_categories" ("id")
+[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "profile_offenses" ADD CONSTRAINT "fk_rails_1a2f0c292c"
+FOREIGN KEY ("twitter_profile_id")
+  REFERENCES "twitter_profiles" ("id")
+[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201005200727)[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201005195056),
+(20201005195539),
+(20201005200007);
+
+[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-10-06 01:23:53.448062"], ["updated_at", "2020-10-06 01:23:53.448062"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "1f8a19c000dba5e8f0b67868be227bd4ea87e901"], ["created_at", "2020-10-06 01:23:53.453486"], ["updated_at", "2020-10-06 01:23:53.453486"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "offense_categories" CASCADE[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "offense_categories" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "twitter_profile_id" bigint NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_offense_categories_on_twitter_profile_id" ON "offense_categories"  ("twitter_profile_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "profile_offenses" CASCADE[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "profile_offenses" ("id" bigserial primary key, "twitter_profile_id" bigint NOT NULL, "offense_category_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_profile_offenses_on_offense_category_id" ON "profile_offenses"  ("offense_category_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_profile_offenses_on_twitter_profile_id" ON "profile_offenses"  ("twitter_profile_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "twitter_profiles" CASCADE[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "twitter_profiles" ("id" bigserial primary key, "username" character varying, "user_id" integer, "display_name" character varying, "offender" boolean, "protected" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "offense_categories" ADD CONSTRAINT "fk_rails_0d0192667b"
+FOREIGN KEY ("twitter_profile_id")
+  REFERENCES "twitter_profiles" ("id")
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "profile_offenses" ADD CONSTRAINT "fk_rails_a7c1ec5062"
+FOREIGN KEY ("offense_category_id")
+  REFERENCES "offense_categories" ("id")
+[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "profile_offenses" ADD CONSTRAINT "fk_rails_1a2f0c292c"
+FOREIGN KEY ("twitter_profile_id")
+  REFERENCES "twitter_profiles" ("id")
+[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201005200727)[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201005195056),
+(20201005195539),
+(20201005200007);
+
+[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-10-06 01:23:53.506622"], ["updated_at", "2020-10-06 01:23:53.506622"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2020-10-06 01:23:53.510998"], ["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "1f8a19c000dba5e8f0b67868be227bd4ea87e901"], ["created_at", "2020-10-06 01:23:53.514780"], ["updated_at", "2020-10-06 01:23:53.514780"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.5ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "user_id", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "realdonaldtrump"], ["user_id", 25073877], ["display_name", "Donald J. Trump"], ["created_at", "2020-10-06 01:23:53.549743"], ["updated_at", "2020-10-06 01:23:53.549743"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "BarackObama"], ["display_name", "Barack Obama"], ["created_at", "2020-10-06 01:23:53.553203"], ["updated_at", "2020-10-06 01:23:53.553203"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "katyperry"], ["display_name", "Katy Perry"], ["created_at", "2020-10-06 01:23:53.565579"], ["updated_at", "2020-10-06 01:23:53.565579"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "rihanna"], ["display_name", "Rihanna"], ["created_at", "2020-10-06 01:23:53.569421"], ["updated_at", "2020-10-06 01:23:53.569421"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "justinbieber"], ["display_name", "Justin Bieber"], ["created_at", "2020-10-06 01:23:53.572202"], ["updated_at", "2020-10-06 01:23:53.572202"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "taylorswift13"], ["display_name", "Taylor Swift"], ["created_at", "2020-10-06 01:23:53.574823"], ["updated_at", "2020-10-06 01:23:53.574823"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "TheEllenShow"], ["display_name", "Ellen DeGeneres"], ["created_at", "2020-10-06 01:23:53.577444"], ["updated_at", "2020-10-06 01:23:53.577444"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "KimKardashian"], ["display_name", "Kim Kardashian"], ["created_at", "2020-10-06 01:23:53.580086"], ["updated_at", "2020-10-06 01:23:53.580086"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "BillGates"], ["display_name", "Bill Gates"], ["created_at", "2020-10-06 01:23:53.582628"], ["updated_at", "2020-10-06 01:23:53.582628"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Elon Musk"], ["display_name", "Elon Musk"], ["created_at", "2020-10-06 01:23:53.585089"], ["updated_at", "2020-10-06 01:23:53.585089"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Britney Spears"], ["display_name", "britneyspears"], ["created_at", "2020-10-06 01:23:53.587564"], ["updated_at", "2020-10-06 01:23:53.587564"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Britney Spears"], ["display_name", "britneyspears"], ["created_at", "2020-10-06 01:23:53.589942"], ["updated_at", "2020-10-06 01:23:53.589942"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.4ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "user_id", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "realdonaldtrump"], ["user_id", 25073877], ["display_name", "Donald J. Trump"], ["created_at", "2020-10-06 01:24:11.428736"], ["updated_at", "2020-10-06 01:24:11.428736"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "BarackObama"], ["display_name", "Barack Obama"], ["created_at", "2020-10-06 01:24:11.432520"], ["updated_at", "2020-10-06 01:24:11.432520"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "katyperry"], ["display_name", "Katy Perry"], ["created_at", "2020-10-06 01:24:11.435659"], ["updated_at", "2020-10-06 01:24:11.435659"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "rihanna"], ["display_name", "Rihanna"], ["created_at", "2020-10-06 01:24:11.438763"], ["updated_at", "2020-10-06 01:24:11.438763"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.3ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "justinbieber"], ["display_name", "Justin Bieber"], ["created_at", "2020-10-06 01:24:11.445937"], ["updated_at", "2020-10-06 01:24:11.445937"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "taylorswift13"], ["display_name", "Taylor Swift"], ["created_at", "2020-10-06 01:24:11.449421"], ["updated_at", "2020-10-06 01:24:11.449421"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "TheEllenShow"], ["display_name", "Ellen DeGeneres"], ["created_at", "2020-10-06 01:24:11.451998"], ["updated_at", "2020-10-06 01:24:11.451998"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "KimKardashian"], ["display_name", "Kim Kardashian"], ["created_at", "2020-10-06 01:24:11.454533"], ["updated_at", "2020-10-06 01:24:11.454533"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "BillGates"], ["display_name", "Bill Gates"], ["created_at", "2020-10-06 01:24:11.457007"], ["updated_at", "2020-10-06 01:24:11.457007"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Elon Musk"], ["display_name", "Elon Musk"], ["created_at", "2020-10-06 01:24:11.459457"], ["updated_at", "2020-10-06 01:24:11.459457"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Britney Spears"], ["display_name", "britneyspears"], ["created_at", "2020-10-06 01:24:11.461953"], ["updated_at", "2020-10-06 01:24:11.461953"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Britney Spears"], ["display_name", "britneyspears"], ["created_at", "2020-10-06 01:24:11.464331"], ["updated_at", "2020-10-06 01:24:11.464331"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOffenseCategory Create (0.5ms)[0m  [1m[32mINSERT INTO "offense_categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "none"], ["created_at", "2020-10-06 01:24:11.472185"], ["updated_at", "2020-10-06 01:24:11.472185"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (26.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "SHAMR_development"[0m
+  [1m[35m (22.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "SHAMR_test"[0m
+  [1m[35m (52.2ms)[0m  [1m[35mCREATE DATABASE "SHAMR_development" ENCODING = 'unicode'[0m
+  [1m[35m (57.2ms)[0m  [1m[35mCREATE DATABASE "SHAMR_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "offense_categories" CASCADE[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "offense_categories" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "twitter_profile_id" bigint NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE  INDEX  "index_offense_categories_on_twitter_profile_id" ON "offense_categories"  ("twitter_profile_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "profile_offenses" CASCADE[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "profile_offenses" ("id" bigserial primary key, "twitter_profile_id" bigint NOT NULL, "offense_category_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX  "index_profile_offenses_on_offense_category_id" ON "profile_offenses"  ("offense_category_id")[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX  "index_profile_offenses_on_twitter_profile_id" ON "profile_offenses"  ("twitter_profile_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "twitter_profiles" CASCADE[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "twitter_profiles" ("id" bigserial primary key, "username" character varying, "user_id" integer, "display_name" character varying, "offender" boolean, "protected" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "offense_categories" ADD CONSTRAINT "fk_rails_0d0192667b"
+FOREIGN KEY ("twitter_profile_id")
+  REFERENCES "twitter_profiles" ("id")
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "profile_offenses" ADD CONSTRAINT "fk_rails_a7c1ec5062"
+FOREIGN KEY ("offense_category_id")
+  REFERENCES "offense_categories" ("id")
+[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "profile_offenses" ADD CONSTRAINT "fk_rails_1a2f0c292c"
+FOREIGN KEY ("twitter_profile_id")
+  REFERENCES "twitter_profiles" ("id")
+[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201005200727)[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201005195056),
+(20201005195539),
+(20201005200007);
+
+[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-10-06 01:24:32.755830"], ["updated_at", "2020-10-06 01:24:32.755830"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "1f8a19c000dba5e8f0b67868be227bd4ea87e901"], ["created_at", "2020-10-06 01:24:32.761484"], ["updated_at", "2020-10-06 01:24:32.761484"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "offense_categories" CASCADE[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "offense_categories" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "twitter_profile_id" bigint NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_offense_categories_on_twitter_profile_id" ON "offense_categories"  ("twitter_profile_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "profile_offenses" CASCADE[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "profile_offenses" ("id" bigserial primary key, "twitter_profile_id" bigint NOT NULL, "offense_category_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_profile_offenses_on_offense_category_id" ON "profile_offenses"  ("offense_category_id")[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX  "index_profile_offenses_on_twitter_profile_id" ON "profile_offenses"  ("twitter_profile_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "twitter_profiles" CASCADE[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "twitter_profiles" ("id" bigserial primary key, "username" character varying, "user_id" integer, "display_name" character varying, "offender" boolean, "protected" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "offense_categories" ADD CONSTRAINT "fk_rails_0d0192667b"
+FOREIGN KEY ("twitter_profile_id")
+  REFERENCES "twitter_profiles" ("id")
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "profile_offenses" ADD CONSTRAINT "fk_rails_a7c1ec5062"
+FOREIGN KEY ("offense_category_id")
+  REFERENCES "offense_categories" ("id")
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "profile_offenses" ADD CONSTRAINT "fk_rails_1a2f0c292c"
+FOREIGN KEY ("twitter_profile_id")
+  REFERENCES "twitter_profiles" ("id")
+[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201005200727)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201005195056),
+(20201005195539),
+(20201005200007);
+
+[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-10-06 01:24:32.813652"], ["updated_at", "2020-10-06 01:24:32.813652"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2020-10-06 01:24:32.819081"], ["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "1f8a19c000dba5e8f0b67868be227bd4ea87e901"], ["created_at", "2020-10-06 01:24:32.822963"], ["updated_at", "2020-10-06 01:24:32.822963"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.5ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "user_id", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "realdonaldtrump"], ["user_id", 25073877], ["display_name", "Donald J. Trump"], ["created_at", "2020-10-06 01:24:32.863573"], ["updated_at", "2020-10-06 01:24:32.863573"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "BarackObama"], ["display_name", "Barack Obama"], ["created_at", "2020-10-06 01:24:32.866879"], ["updated_at", "2020-10-06 01:24:32.866879"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "katyperry"], ["display_name", "Katy Perry"], ["created_at", "2020-10-06 01:24:32.869454"], ["updated_at", "2020-10-06 01:24:32.869454"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "rihanna"], ["display_name", "Rihanna"], ["created_at", "2020-10-06 01:24:32.872150"], ["updated_at", "2020-10-06 01:24:32.872150"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "justinbieber"], ["display_name", "Justin Bieber"], ["created_at", "2020-10-06 01:24:32.874757"], ["updated_at", "2020-10-06 01:24:32.874757"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "taylorswift13"], ["display_name", "Taylor Swift"], ["created_at", "2020-10-06 01:24:32.877349"], ["updated_at", "2020-10-06 01:24:32.877349"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "TheEllenShow"], ["display_name", "Ellen DeGeneres"], ["created_at", "2020-10-06 01:24:32.879907"], ["updated_at", "2020-10-06 01:24:32.879907"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "KimKardashian"], ["display_name", "Kim Kardashian"], ["created_at", "2020-10-06 01:24:32.882383"], ["updated_at", "2020-10-06 01:24:32.882383"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "BillGates"], ["display_name", "Bill Gates"], ["created_at", "2020-10-06 01:24:32.884843"], ["updated_at", "2020-10-06 01:24:32.884843"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Elon Musk"], ["display_name", "Elon Musk"], ["created_at", "2020-10-06 01:24:32.887195"], ["updated_at", "2020-10-06 01:24:32.887195"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Britney Spears"], ["display_name", "britneyspears"], ["created_at", "2020-10-06 01:24:32.889426"], ["updated_at", "2020-10-06 01:24:32.889426"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Britney Spears"], ["display_name", "britneyspears"], ["created_at", "2020-10-06 01:24:32.891698"], ["updated_at", "2020-10-06 01:24:32.891698"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOffenseCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "offense_categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "none"], ["created_at", "2020-10-06 01:24:32.899260"], ["updated_at", "2020-10-06 01:24:32.899260"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (27.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "SHAMR_development"[0m
+  [1m[35m (22.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "SHAMR_test"[0m
+  [1m[35m (51.9ms)[0m  [1m[35mCREATE DATABASE "SHAMR_development" ENCODING = 'unicode'[0m
+  [1m[35m (52.6ms)[0m  [1m[35mCREATE DATABASE "SHAMR_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "offense_categories" CASCADE[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "offense_categories" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "twitter_profile_id" bigint NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX  "index_offense_categories_on_twitter_profile_id" ON "offense_categories"  ("twitter_profile_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "profile_offenses" CASCADE[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "profile_offenses" ("id" bigserial primary key, "twitter_profile_id" bigint NOT NULL, "offense_category_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX  "index_profile_offenses_on_offense_category_id" ON "profile_offenses"  ("offense_category_id")[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX  "index_profile_offenses_on_twitter_profile_id" ON "profile_offenses"  ("twitter_profile_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "twitter_profiles" CASCADE[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "twitter_profiles" ("id" bigserial primary key, "username" character varying, "user_id" integer, "display_name" character varying, "offender" boolean, "protected" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "offense_categories" ADD CONSTRAINT "fk_rails_0d0192667b"
+FOREIGN KEY ("twitter_profile_id")
+  REFERENCES "twitter_profiles" ("id")
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "profile_offenses" ADD CONSTRAINT "fk_rails_a7c1ec5062"
+FOREIGN KEY ("offense_category_id")
+  REFERENCES "offense_categories" ("id")
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "profile_offenses" ADD CONSTRAINT "fk_rails_1a2f0c292c"
+FOREIGN KEY ("twitter_profile_id")
+  REFERENCES "twitter_profiles" ("id")
+[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201005200727)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201005195056),
+(20201005195539),
+(20201005200007);
+
+[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-10-06 01:24:44.131937"], ["updated_at", "2020-10-06 01:24:44.131937"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "1f8a19c000dba5e8f0b67868be227bd4ea87e901"], ["created_at", "2020-10-06 01:24:44.137480"], ["updated_at", "2020-10-06 01:24:44.137480"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "offense_categories" CASCADE[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "offense_categories" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "twitter_profile_id" bigint NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX  "index_offense_categories_on_twitter_profile_id" ON "offense_categories"  ("twitter_profile_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "profile_offenses" CASCADE[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "profile_offenses" ("id" bigserial primary key, "twitter_profile_id" bigint NOT NULL, "offense_category_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX  "index_profile_offenses_on_offense_category_id" ON "profile_offenses"  ("offense_category_id")[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX  "index_profile_offenses_on_twitter_profile_id" ON "profile_offenses"  ("twitter_profile_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "twitter_profiles" CASCADE[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "twitter_profiles" ("id" bigserial primary key, "username" character varying, "user_id" integer, "display_name" character varying, "offender" boolean, "protected" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "offense_categories" ADD CONSTRAINT "fk_rails_0d0192667b"
+FOREIGN KEY ("twitter_profile_id")
+  REFERENCES "twitter_profiles" ("id")
+[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "profile_offenses" ADD CONSTRAINT "fk_rails_a7c1ec5062"
+FOREIGN KEY ("offense_category_id")
+  REFERENCES "offense_categories" ("id")
+[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "profile_offenses" ADD CONSTRAINT "fk_rails_1a2f0c292c"
+FOREIGN KEY ("twitter_profile_id")
+  REFERENCES "twitter_profiles" ("id")
+[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201005200727)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201005195056),
+(20201005195539),
+(20201005200007);
+
+[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-10-06 01:24:44.187690"], ["updated_at", "2020-10-06 01:24:44.187690"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2020-10-06 01:24:44.191983"], ["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "1f8a19c000dba5e8f0b67868be227bd4ea87e901"], ["created_at", "2020-10-06 01:24:44.195728"], ["updated_at", "2020-10-06 01:24:44.195728"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.5ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "user_id", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "realdonaldtrump"], ["user_id", 25073877], ["display_name", "Donald J. Trump"], ["created_at", "2020-10-06 01:24:44.237139"], ["updated_at", "2020-10-06 01:24:44.237139"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "BarackObama"], ["display_name", "Barack Obama"], ["created_at", "2020-10-06 01:24:44.240559"], ["updated_at", "2020-10-06 01:24:44.240559"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "katyperry"], ["display_name", "Katy Perry"], ["created_at", "2020-10-06 01:24:44.243233"], ["updated_at", "2020-10-06 01:24:44.243233"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "rihanna"], ["display_name", "Rihanna"], ["created_at", "2020-10-06 01:24:44.245897"], ["updated_at", "2020-10-06 01:24:44.245897"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "justinbieber"], ["display_name", "Justin Bieber"], ["created_at", "2020-10-06 01:24:44.248481"], ["updated_at", "2020-10-06 01:24:44.248481"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "taylorswift13"], ["display_name", "Taylor Swift"], ["created_at", "2020-10-06 01:24:44.251085"], ["updated_at", "2020-10-06 01:24:44.251085"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "TheEllenShow"], ["display_name", "Ellen DeGeneres"], ["created_at", "2020-10-06 01:24:44.253666"], ["updated_at", "2020-10-06 01:24:44.253666"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "KimKardashian"], ["display_name", "Kim Kardashian"], ["created_at", "2020-10-06 01:24:44.256161"], ["updated_at", "2020-10-06 01:24:44.256161"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "BillGates"], ["display_name", "Bill Gates"], ["created_at", "2020-10-06 01:24:44.258802"], ["updated_at", "2020-10-06 01:24:44.258802"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Elon Musk"], ["display_name", "Elon Musk"], ["created_at", "2020-10-06 01:24:44.261109"], ["updated_at", "2020-10-06 01:24:44.261109"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Britney Spears"], ["display_name", "britneyspears"], ["created_at", "2020-10-06 01:24:44.263278"], ["updated_at", "2020-10-06 01:24:44.263278"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Britney Spears"], ["display_name", "britneyspears"], ["created_at", "2020-10-06 01:24:44.265561"], ["updated_at", "2020-10-06 01:24:44.265561"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOffenseCategory Create (0.7ms)[0m  [1m[32mINSERT INTO "offense_categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "none"], ["created_at", "2020-10-06 01:24:57.722795"], ["updated_at", "2020-10-06 01:24:57.722795"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTwitterProfile Load (0.3ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" ORDER BY "twitter_profiles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mOffenseCategory Load (0.5ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1 LIMIT $2[0m  [["twitter_profile_id", 12], ["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOffenseCategory Create (1.3ms)[0m  [1m[32mINSERT INTO "offense_categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "none"], ["created_at", "2020-10-06 01:30:21.957841"], ["updated_at", "2020-10-06 01:30:21.957841"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4552537367984208015)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveTwitterProfileFromOffenseCategories (20201006013350)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "offense_categories" DROP CONSTRAINT "fk_rails_0d0192667b"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "offense_categories" DROP COLUMN "twitter_profile_id"[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201006013350"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(4552537367984208015)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (24.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "SHAMR_development"[0m
+  [1m[35m (22.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "SHAMR_test"[0m
+  [1m[35m (52.6ms)[0m  [1m[35mCREATE DATABASE "SHAMR_development" ENCODING = 'unicode'[0m
+  [1m[35m (55.4ms)[0m  [1m[35mCREATE DATABASE "SHAMR_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "offense_categories" CASCADE[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "offense_categories" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "profile_offenses" CASCADE[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "profile_offenses" ("id" bigserial primary key, "twitter_profile_id" bigint NOT NULL, "offense_category_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_profile_offenses_on_offense_category_id" ON "profile_offenses"  ("offense_category_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_profile_offenses_on_twitter_profile_id" ON "profile_offenses"  ("twitter_profile_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "twitter_profiles" CASCADE[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "twitter_profiles" ("id" bigserial primary key, "username" character varying, "user_id" integer, "display_name" character varying, "offender" boolean, "protected" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "profile_offenses" ADD CONSTRAINT "fk_rails_a7c1ec5062"
+FOREIGN KEY ("offense_category_id")
+  REFERENCES "offense_categories" ("id")
+[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "profile_offenses" ADD CONSTRAINT "fk_rails_1a2f0c292c"
+FOREIGN KEY ("twitter_profile_id")
+  REFERENCES "twitter_profiles" ("id")
+[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201006013350)[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201005195056),
+(20201005195539),
+(20201005200007),
+(20201005200727);
+
+[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-10-06 01:34:30.579589"], ["updated_at", "2020-10-06 01:34:30.579589"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "3317e8cdb34bf2f08b905794bbcf028a3f73ba68"], ["created_at", "2020-10-06 01:34:30.585391"], ["updated_at", "2020-10-06 01:34:30.585391"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "offense_categories" CASCADE[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "offense_categories" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "profile_offenses" CASCADE[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "profile_offenses" ("id" bigserial primary key, "twitter_profile_id" bigint NOT NULL, "offense_category_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX  "index_profile_offenses_on_offense_category_id" ON "profile_offenses"  ("offense_category_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_profile_offenses_on_twitter_profile_id" ON "profile_offenses"  ("twitter_profile_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "twitter_profiles" CASCADE[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "twitter_profiles" ("id" bigserial primary key, "username" character varying, "user_id" integer, "display_name" character varying, "offender" boolean, "protected" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "profile_offenses" ADD CONSTRAINT "fk_rails_a7c1ec5062"
+FOREIGN KEY ("offense_category_id")
+  REFERENCES "offense_categories" ("id")
+[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "profile_offenses" ADD CONSTRAINT "fk_rails_1a2f0c292c"
+FOREIGN KEY ("twitter_profile_id")
+  REFERENCES "twitter_profiles" ("id")
+[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201006013350)[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201005195056),
+(20201005195539),
+(20201005200007),
+(20201005200727);
+
+[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-10-06 01:34:30.633479"], ["updated_at", "2020-10-06 01:34:30.633479"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2020-10-06 01:34:30.637848"], ["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "3317e8cdb34bf2f08b905794bbcf028a3f73ba68"], ["created_at", "2020-10-06 01:34:30.641706"], ["updated_at", "2020-10-06 01:34:30.641706"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.5ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "user_id", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "realdonaldtrump"], ["user_id", 25073877], ["display_name", "Donald J. Trump"], ["created_at", "2020-10-06 01:34:30.685449"], ["updated_at", "2020-10-06 01:34:30.685449"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "BarackObama"], ["display_name", "Barack Obama"], ["created_at", "2020-10-06 01:34:30.688830"], ["updated_at", "2020-10-06 01:34:30.688830"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "katyperry"], ["display_name", "Katy Perry"], ["created_at", "2020-10-06 01:34:30.691445"], ["updated_at", "2020-10-06 01:34:30.691445"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "rihanna"], ["display_name", "Rihanna"], ["created_at", "2020-10-06 01:34:30.694085"], ["updated_at", "2020-10-06 01:34:30.694085"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "justinbieber"], ["display_name", "Justin Bieber"], ["created_at", "2020-10-06 01:34:30.696773"], ["updated_at", "2020-10-06 01:34:30.696773"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "taylorswift13"], ["display_name", "Taylor Swift"], ["created_at", "2020-10-06 01:34:30.699399"], ["updated_at", "2020-10-06 01:34:30.699399"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "TheEllenShow"], ["display_name", "Ellen DeGeneres"], ["created_at", "2020-10-06 01:34:30.702017"], ["updated_at", "2020-10-06 01:34:30.702017"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "KimKardashian"], ["display_name", "Kim Kardashian"], ["created_at", "2020-10-06 01:34:30.704602"], ["updated_at", "2020-10-06 01:34:30.704602"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "BillGates"], ["display_name", "Bill Gates"], ["created_at", "2020-10-06 01:34:30.707196"], ["updated_at", "2020-10-06 01:34:30.707196"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.1ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Elon Musk"], ["display_name", "Elon Musk"], ["created_at", "2020-10-06 01:34:30.709769"], ["updated_at", "2020-10-06 01:34:30.709769"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Britney Spears"], ["display_name", "britneyspears"], ["created_at", "2020-10-06 01:34:30.712443"], ["updated_at", "2020-10-06 01:34:30.712443"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTwitterProfile Create (0.2ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Britney Spears"], ["display_name", "britneyspears"], ["created_at", "2020-10-06 01:34:30.715021"], ["updated_at", "2020-10-06 01:34:30.715021"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOffenseCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "offense_categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "none"], ["created_at", "2020-10-06 01:34:30.723032"], ["updated_at", "2020-10-06 01:34:30.723032"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOffenseCategory Create (0.1ms)[0m  [1m[32mINSERT INTO "offense_categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "use of customary units of measure"], ["created_at", "2020-10-06 01:34:30.725847"], ["updated_at", "2020-10-06 01:34:30.725847"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOffenseCategory Create (0.1ms)[0m  [1m[32mINSERT INTO "offense_categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "incorrect pronunciation of gif"], ["created_at", "2020-10-06 01:34:30.728144"], ["updated_at", "2020-10-06 01:34:30.728144"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOffenseCategory Create (0.1ms)[0m  [1m[32mINSERT INTO "offense_categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "does not include /s for sarcasm"], ["created_at", "2020-10-06 01:34:30.730384"], ["updated_at", "2020-10-06 01:34:30.730384"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOffenseCategory Create (0.1ms)[0m  [1m[32mINSERT INTO "offense_categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "mows their lawn before 8AM"], ["created_at", "2020-10-06 01:34:30.732661"], ["updated_at", "2020-10-06 01:34:30.732661"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOffenseCategory Create (0.1ms)[0m  [1m[32mINSERT INTO "offense_categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "slow-walker"], ["created_at", "2020-10-06 01:34:30.735057"], ["updated_at", "2020-10-06 01:34:30.735057"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOffenseCategory Create (0.1ms)[0m  [1m[32mINSERT INTO "offense_categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "not using turn indicator"], ["created_at", "2020-10-06 01:34:30.737686"], ["updated_at", "2020-10-06 01:34:30.737686"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOffenseCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "offense_categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "loud chewer"], ["created_at", "2020-10-06 01:34:30.739891"], ["updated_at", "2020-10-06 01:34:30.739891"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTwitterProfile Load (0.3ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "twitter_profiles"[0m
+  [1m[36mOffenseCategory Load (0.3ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mOffenseCategory Load (0.4ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories"[0m

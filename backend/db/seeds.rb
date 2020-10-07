@@ -29,3 +29,5 @@ OffenseCategory.create(name: 'mows their lawn before 8AM')
 OffenseCategory.create(name: 'slow-walker')
 OffenseCategory.create(name: 'not using turn indicator')
 OffenseCategory.create(name: 'loud chewer')
+
+# TwitterProfile.find_by_id(1).offense_categories << OffenseCategory.find_by_id(3)

@@ -1,0 +1,2 @@
+class OffenseCategoriesController < ApplicationController
+end

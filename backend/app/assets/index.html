@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <head>
 <title> SHAMR | SHAME YOUR FRIENDS </title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,6 +23,8 @@ body, html {
   display: none;
 }
 </style>
+<script type="text/javascript" src="javascripts/application.js"></script>
+</head>
 <body>
 
 <!-- Links (sit on top) -->
@@ -84,28 +87,16 @@ body, html {
 <div class="w3-container" id="offenders_offenses">
     <div class="w3-content" style="max-width:1200px">
         <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">OFFENDERS/OFFENSES</span></h5>
-  
+
         <div class="w3-row w3-center w3-card w3-padding">
-            <a href="javascript:void(0)" onclick="openMenu(event, 'Offenders');" id="myLink">
-                <div class="w3-col s6 tablink">Offenders</div>
-            </a>
-            <a href="javascript:void(0)" onclick="openMenu(event, 'Offenses');">
-                <div class="w3-col s6 tablink">Offenses</div>
-            </a>
+              <button onclick="showOffenders()" id="offender_button" class="w3-col s6 tablink w3-dark-grey">Offenders</button>
+              <button onclick="showOffenses()" id="offense_button" class="w3-col s6 tablink">Offenses</button>
         </div>
 
-        <div id="Offenders" class="w3-container menu w3-padding-48 w3-card">
-            <h5>Bread Basket</h5>
-            <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
-            <h5>Honey Almond Granola with Fruits</h5>
-            <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+        <div id="Offenders" class="w3-container w3-padding-48 w3-card" style="display:block">
         </div>
 
-        <div id="Offenses" class="w3-container menu w3-padding-48 w3-card">
-            <h5>Coffee</h5>
-            <p class="w3-text-grey">Regular coffee 2.50</p><br>
-            <h5>Chocolato</h5>
-            <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+        <div id="Offenses" class="w3-container w3-padding-48 w3-card" style="display:none">
         </div>
     <br>
     </div>
@@ -147,20 +138,20 @@ body, html {
 
 <script>
 // Tabbed Menu
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-}
-document.getElementById("myLink").click();
+// function openMenu(evt, menuName) {
+//   var i, x, tablinks;
+//   x = document.getElementsByClassName("menu");
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";
+//   }
+//   tablinks = document.getElementsByClassName("tablink");
+//   for (i = 0; i < x.length; i++) {
+//     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+//   }
+//   document.getElementById(menuName).style.display = "block";
+//   evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+// }
+// document.getElementById("myLink").click();
 </script>
 
 </body>

@@ -25,7 +25,7 @@ class OffenseCategoriesController < ApplicationController
     private
 
     def offense_params
-        params.permit(:name)
+        params.require(:offense_category).permit(:name)
     end
 
     def set_offense

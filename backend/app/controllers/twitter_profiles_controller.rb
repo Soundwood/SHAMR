@@ -24,7 +24,7 @@ class TwitterProfilesController < ApplicationController
     private
 
     def prof_params
-        params.permit(:username, :user_id, :display_name)
+        params.require(:twitter_profile).permit(:username, :user_id, :display_name)
     end
 
     def set_prof

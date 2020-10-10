@@ -23,6 +23,8 @@ body, html {
   display: none;
 }
 </style>
+<script type="text/javascript" src="javascripts/profiles.js"></script>
+<script type="text/javascript" src="javascripts/offenses.js"></script>
 <script type="text/javascript" src="javascripts/application.js"></script>
 </head>
 <body>
@@ -40,7 +42,7 @@ body, html {
         <a href="#shame" class="w3-button w3-block w3-black">SHAME</a>
     </div>
     <div class="w3-col s3">
-        <a href="#add_to_offense_offender" class="w3-button w3-block w3-black">ADD TO OFFENSES/OFFENDERS</a>
+        <a href="#add__update_offender" class="w3-button w3-block w3-black">ADD TO OFFENSES/OFFENDERS</a>
     </div>
   </div>
 </div>
@@ -66,7 +68,7 @@ body, html {
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT SHAMR</span></h5>
     <p>
         SHAMR is meant to be an exercise in 'bad tech' in that this is not expected to be taken entirely seriously.
-        While watching a PBS broadcast, the topic of the 'Chinese Social Credit System' was investigated. You can read more about it here(LINK). 
+        While watching a PBS broadcast, the topic of the 'Chinese Social Credit System' was investigated. You can read more about it <a href="https://en.wikipedia.org/wiki/Social_Credit_System">here</a>. 
         I undertook this project to explore how tech can be used against us and ways in which it might go wrong.
     </p>
     <p>
@@ -114,18 +116,29 @@ body, html {
 </div>
 
 <!-- New Offenders and Offenses Container -->
-<div class="w3-container" id="add_to_offense_offender">
+<div class="w3-container" id="add_update_offender">
     <div class="w3-content" style="max-width:1200px">
-        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ADD TO OFFENDERS/OFFENSES</span></h5>
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CREATE/CHANGE OFFENDER</span></h5>
         <form action="/action_page.php" target="_blank">
-            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-            <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
-            <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
-            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-            <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Twitter Handle" required name="Name"></p>
+            <p id="off_opt_cont">
+            </p>
+            <p><button class="w3-button w3-black" type="submit">CREATE/CHANGE OFFENDER</button></p>
         </form>
     <br>  
     </div>
+</div>
+
+<!-- New Offenses Container -->
+<div class="w3-container" id="add_to_offenses">
+  <div class="w3-content" style="max-width:1200px">
+      <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CREATE NEW OFFENSE</span></h5>
+      <!-- <form action="/action_page.php" target="_blank"> -->
+          <p><input id="offense_input" class="w3-input w3-padding-16 w3-border" type="text" placeholder="Description of Offense" required name="offense_name"></p>
+          <p><button id="create_new_offense" class="w3-button w3-black" type="submit">CREATE NEW OFFENSE</button></p>
+      <!-- </form> -->
+  <br>  
+  </div>
 </div>
 
 <!-- End page content -->
@@ -133,26 +146,7 @@ body, html {
 
 <!-- Footer -->
 <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p>Created by <a href="http://github.com/soundwood" title="SOUNDWOOD" target="_blank" class="w3-hover-text-green">SOUNDWOOD</a></p>
 </footer>
-
-<script>
-// Tabbed Menu
-// function openMenu(evt, menuName) {
-//   var i, x, tablinks;
-//   x = document.getElementsByClassName("menu");
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "none";
-//   }
-//   tablinks = document.getElementsByClassName("tablink");
-//   for (i = 0; i < x.length; i++) {
-//     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-//   }
-//   document.getElementById(menuName).style.display = "block";
-//   evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-// }
-// document.getElementById("myLink").click();
-</script>
-
 </body>
 </html>

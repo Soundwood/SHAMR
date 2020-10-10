@@ -7,9 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-TwitterProfile.create(username: 'realdonaldtrump', display_name: 'Donald J. Trump', user_id: 25073877, protected: true) 
+prof_a =TwitterProfile.create(username: 'realdonaldtrump', display_name: 'Donald J. Trump', user_id: 25073877, irreproachable: true) 
 TwitterProfile.create(username: 'barackobama', display_name: 'Barack Obama')
-TwitterProfile.create(username: 'katyperry', display_name: 'Katy Perry')
+TwitterProfile.create(username: 'katyperry', display_name: 'Katy Perry', offender: true)
 TwitterProfile.create(username: 'rihanna', display_name: 'Rihanna')
 TwitterProfile.create(username: 'justinbieber', display_name: 'Justin Bieber')
 TwitterProfile.create(username: 'taylorswift13', display_name: 'Taylor Swift', offender: true)
@@ -21,7 +21,7 @@ TwitterProfile.create(username: 'britneyspears', display_name: 'Britney Spears')
 TwitterProfile.create(username: 'shakira', display_name: 'Shakira')
 
 
-OffenseCategory.create(name: 'none')
+off_a = OffenseCategory.create(name: 'none')
 OffenseCategory.create(name: 'use of customary units of measure')
 OffenseCategory.create(name: 'incorrect pronunciation of gif')
 OffenseCategory.create(name: 'does not include /s for sarcasm')
@@ -31,3 +31,4 @@ OffenseCategory.create(name: 'not using turn indicator')
 OffenseCategory.create(name: 'loud chewer')
 
 # TwitterProfile.find_by_id(1).offense_categories << OffenseCategory.find_by_id(3)
+# sighting_a = profile_offenses.create(twitter_profile_id: prof_a, location: off_a)

@@ -11,8 +11,21 @@ document.addEventListener("DOMContentLoaded", () => {
         let offInput = document.getElementById("offense_input")
         let offense = new Offense({name: offInput.value})
         offense.createNew()
-    }
-)})
+    })
+    let createOffenderBtn = document.getElementById("create_change_offender_btn")
+    createOffenderBtn.addEventListener("click", function(event){
+        event.preventDefault()
+        let twitterHandle = document.getElementById("twitter_handle_input")
+        var array = []
+        var checkboxes = document.querySelectorAll('input[type=checkbox]:checked')
+        for (var i = 0; i < checkboxes.length; i++) {
+            array.push(checkboxes[i].id)
+        }
+        let newTwittOff = new Profile({username: twitterHandle.value, offense_categories: array})
+        newTwittOff.createNew()
+        // create offender
+    });
+})
 
 const loadProfiles = () => {
     fetch(PROFS_URL)
@@ -79,5 +92,8 @@ function clearOffenses() {
         offCont.firstChild.remove()
     }
 }
-
+function scrollToOffenders() {
+    const elmnt = document.getElementById("offenders_offenses");
+    elmnt.scrollIntoView()
+}
 // video game - sandwich - diamonds

@@ -31,7 +31,7 @@ class Offense {
         let checkbox = document.createElement('input')
         let br = document.createElement("br")
         checkbox.setAttribute("type", "checkbox")
-        checkbox.setAttribute("id", `offense_${this.id}`)
+        checkbox.setAttribute("id", `${this.id}`)
         checkbox.setAttribute("name", `name_offense_${this.id}`)
         let checkboxLabel = document.createElement('label')
         checkboxLabel.setAttribute("for", `name_offense_${this.id}`)

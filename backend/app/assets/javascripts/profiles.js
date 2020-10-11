@@ -19,19 +19,22 @@ class Profile {
         let profilesDiv = document.getElementById("Offenders")
         let profileCont = document.createElement('div')
         let profileH5 = document.createElement('h5')
-        let profileP = document.createElement('p')
         let button = document.createElement('button')
-        profileCont.id = `profile_container_for_${this.id}`
+        profileCont.id = `profile_container_for_id${this.id}`
         profilesDiv.appendChild(profileCont)
         button.innerText = `Remove ${this.display_name} from Offenders List`
         profileH5.innerText = this.display_name
+        profileCont.appendChild(profileH5)
         if (this.offense_categories.length > 0) {
             // debugger
-            this.offense_categories.forEach(element => profileP.innerText = ` - ${element.name} `)
+            this.offense_categories.forEach((element) => {
+                let profileP = document.createElement('p')
+                profileP.id = `profile_offense_id${element.id}`
+                profileP.innerText = ` - ${element.name} `
+                profileCont.appendChild(profileP)
+            })
         }
-        profileCont.appendChild(profileH5)
-        profileCont.appendChild(profileP)
-        profileP.appendChild(button)
+        profileCont.appendChild(button)
         button.addEventListener("click", (e) => {
             // debugger
             if (this.offender === true) {
@@ -41,6 +44,31 @@ class Profile {
               method: "DELETE",
             }).then(profileCont.remove());
             }
+        })
+    }
+    createNew() {
+        // debugger
+        fetch("http://localhost:3000/twitter_profiles", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                    username: this.username,
+                    display_name: this.username,
+                    offense_categories: this.offense_categories,
+                },
+            ),
+        })
+        .then((resp) => resp.json())
+        .then((data) => {
+          if (data.errors) {
+            console.log(info.errors);
+          } else {
+            this.id = data.id;
+            document.querySelector('input[id=twitter_handle_input]').value = "";
+            loadProfiles()
+          }
         })
     }   
 }

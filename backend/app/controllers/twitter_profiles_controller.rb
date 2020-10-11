@@ -10,6 +10,12 @@ class TwitterProfilesController < ApplicationController
     end
     def create
         @prof = TwitterProfile.create!(prof_params)
+        if params[:offense_categories]
+            params[:offense_categories].each do |offense|
+                @prof.offense_categories << OffenseCategory.find_by_id(offense)
+            end
+        end
+
         render json: @prof
     end
     def update

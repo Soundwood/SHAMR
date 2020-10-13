@@ -14922,3 +14922,541 @@ Processing by TwitterProfilesController#destroy as */*
 Completed 204 No Content in 18ms (ActiveRecord: 3.3ms | Allocations: 9638)
 
 
+Started GET "/twitter_profiles" for ::1 at 2020-10-11 13:48:54 -0500
+Started GET "/offense_categories" for ::1 at 2020-10-11 13:48:54 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OffenseCategoriesController#index as */*
+  [1m[35m (19.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TwitterProfilesController#index as */*
+  [1m[36mOffenseCategory Load (4.5ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories"[0m
+  ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+  [1m[36mTwitterProfile Load (2.3ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles"[0m
+  ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.7ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.7ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (1.3ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (2.0ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (2.2ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 4]]
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.4ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.9ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 4]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (1.0ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 5]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (2.2ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 5]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (1.1ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 6]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (1.1ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 6]]
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.5ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 7]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (1.3ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 7]]
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.4ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 8]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (20.5ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 8]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (1.1ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 9]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (101.58ms)
+Completed 200 OK in 167ms (Views: 105.9ms | ActiveRecord: 51.8ms | Allocations: 51536)
+
+
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.7ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 10]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (2.0ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 11]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.7ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 12]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (100.05ms)
+Completed 200 OK in 170ms (Views: 103.3ms | ActiveRecord: 63.6ms | Allocations: 55805)
+
+
+Started DELETE "/twitter_profiles/4" for ::1 at 2020-10-11 13:49:24 -0500
+Processing by TwitterProfilesController#destroy as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mTwitterProfile Load (0.2ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" WHERE "twitter_profiles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/twitter_profiles_controller.rb:37:in `set_prof'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/twitter_profiles_controller.rb:26:in `destroy'
+  [1m[36mOffenseCategory Load (0.2ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 4]]
+  ↳ app/controllers/twitter_profiles_controller.rb:26:in `destroy'
+  [1m[36mProfileOffense Load (0.3ms)[0m  [1m[34mSELECT "profile_offenses".* FROM "profile_offenses" WHERE "profile_offenses"."twitter_profile_id" = $1 AND "profile_offenses"."offense_category_id" = $2[0m  [["twitter_profile_id", 4], ["offense_category_id", 2]]
+  ↳ app/controllers/twitter_profiles_controller.rb:26:in `destroy'
+  [1m[36mProfileOffense Destroy (0.4ms)[0m  [1m[31mDELETE FROM "profile_offenses" WHERE "profile_offenses"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/twitter_profiles_controller.rb:26:in `destroy'
+  [1m[36mTwitterProfile Destroy (0.6ms)[0m  [1m[31mDELETE FROM "twitter_profiles" WHERE "twitter_profiles"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/twitter_profiles_controller.rb:26:in `destroy'
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/twitter_profiles_controller.rb:26:in `destroy'
+Completed 204 No Content in 32ms (ActiveRecord: 6.3ms | Allocations: 11114)
+
+
+Started DELETE "/twitter_profiles/5" for ::1 at 2020-10-11 13:49:31 -0500
+Processing by TwitterProfilesController#destroy as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mTwitterProfile Load (0.3ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" WHERE "twitter_profiles"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/twitter_profiles_controller.rb:37:in `set_prof'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/twitter_profiles_controller.rb:26:in `destroy'
+  [1m[36mOffenseCategory Load (0.2ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 5]]
+  ↳ app/controllers/twitter_profiles_controller.rb:26:in `destroy'
+  [1m[36mProfileOffense Load (0.2ms)[0m  [1m[34mSELECT "profile_offenses".* FROM "profile_offenses" WHERE "profile_offenses"."twitter_profile_id" = $1 AND "profile_offenses"."offense_category_id" = $2[0m  [["twitter_profile_id", 5], ["offense_category_id", 6]]
+  ↳ app/controllers/twitter_profiles_controller.rb:26:in `destroy'
+  [1m[36mProfileOffense Destroy (0.4ms)[0m  [1m[31mDELETE FROM "profile_offenses" WHERE "profile_offenses"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/twitter_profiles_controller.rb:26:in `destroy'
+  [1m[36mTwitterProfile Destroy (1.2ms)[0m  [1m[31mDELETE FROM "twitter_profiles" WHERE "twitter_profiles"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/twitter_profiles_controller.rb:26:in `destroy'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/twitter_profiles_controller.rb:26:in `destroy'
+Completed 204 No Content in 16ms (ActiveRecord: 3.1ms | Allocations: 6076)
+
+
+Started DELETE "/offense_categories/4" for ::1 at 2020-10-11 13:49:48 -0500
+Processing by OffenseCategoriesController#destroy as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mOffenseCategory Load (0.2ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" WHERE "offense_categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/offense_categories_controller.rb:32:in `set_offense'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/offense_categories_controller.rb:21:in `destroy'
+  [1m[36mTwitterProfile Load (0.5ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 4]]
+  ↳ app/controllers/offense_categories_controller.rb:21:in `destroy'
+  [1m[36mProfileOffense Load (0.4ms)[0m  [1m[34mSELECT "profile_offenses".* FROM "profile_offenses" WHERE "profile_offenses"."offense_category_id" = $1 AND "profile_offenses"."twitter_profile_id" IN ($2, $3)[0m  [["offense_category_id", 4], ["twitter_profile_id", 3], ["twitter_profile_id", 10]]
+  ↳ app/controllers/offense_categories_controller.rb:21:in `destroy'
+  [1m[36mProfileOffense Destroy (0.5ms)[0m  [1m[31mDELETE FROM "profile_offenses" WHERE "profile_offenses"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/offense_categories_controller.rb:21:in `destroy'
+  [1m[36mProfileOffense Destroy (0.3ms)[0m  [1m[31mDELETE FROM "profile_offenses" WHERE "profile_offenses"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/offense_categories_controller.rb:21:in `destroy'
+  [1m[36mOffenseCategory Destroy (0.9ms)[0m  [1m[31mDELETE FROM "offense_categories" WHERE "offense_categories"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/offense_categories_controller.rb:21:in `destroy'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/offense_categories_controller.rb:21:in `destroy'
+Completed 204 No Content in 18ms (ActiveRecord: 3.5ms | Allocations: 7337)
+
+
+Started DELETE "/offense_categories/5" for ::1 at 2020-10-11 13:49:51 -0500
+Processing by OffenseCategoriesController#destroy as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mOffenseCategory Load (0.3ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" WHERE "offense_categories"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/offense_categories_controller.rb:32:in `set_offense'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/offense_categories_controller.rb:21:in `destroy'
+  [1m[36mTwitterProfile Load (0.2ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 5]]
+  ↳ app/controllers/offense_categories_controller.rb:21:in `destroy'
+  [1m[36mOffenseCategory Destroy (0.3ms)[0m  [1m[31mDELETE FROM "offense_categories" WHERE "offense_categories"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/offense_categories_controller.rb:21:in `destroy'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/offense_categories_controller.rb:21:in `destroy'
+Completed 204 No Content in 8ms (ActiveRecord: 1.5ms | Allocations: 3758)
+
+
+Started GET "/twitter_profiles" for ::1 at 2020-10-11 13:49:53 -0500
+Started GET "/offense_categories" for ::1 at 2020-10-11 13:49:53 -0500
+Processing by TwitterProfilesController#index as */*
+Processing by OffenseCategoriesController#index as */*
+  [1m[36mTwitterProfile Load (18.3ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles"[0m
+  ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+  [1m[36mOffenseCategory Load (0.7ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories"[0m
+  ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (1.0ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (2.1ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (2.0ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 3]]
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.4ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (1.4ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 6]]
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.6ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (2.0ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 7]]
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.5ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (2.2ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 8]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (3.7ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 7]]
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.4ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 9]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (1.2ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 8]]
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.5ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 10]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (92.07ms)
+Completed 200 OK in 100ms (Views: 90.9ms | ActiveRecord: 9.3ms | Allocations: 24825)
+
+
+[active_model_serializers]   [1m[36mOffenseCategory Load (1.5ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 11]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.5ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 12]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (126.19ms)
+Completed 200 OK in 148ms (Views: 117.9ms | ActiveRecord: 29.7ms | Allocations: 30935)
+
+
+Started POST "/twitter_profiles" for ::1 at 2020-10-11 13:50:13 -0500
+Processing by TwitterProfilesController#create as */*
+  Parameters: {"username"=>"@howdy", "display_name"=>"@howdy", "offense_categories"=>["2", "6"], "twitter_profile"=>{"username"=>"@howdy", "display_name"=>"@howdy"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/twitter_profiles_controller.rb:12:in `create'
+  [1m[36mTwitterProfile Create (0.4ms)[0m  [1m[32mINSERT INTO "twitter_profiles" ("username", "display_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "@howdy"], ["display_name", "@howdy"], ["created_at", "2020-10-11 18:50:13.080618"], ["updated_at", "2020-10-11 18:50:13.080618"]]
+  ↳ app/controllers/twitter_profiles_controller.rb:12:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/twitter_profiles_controller.rb:12:in `create'
+  [1m[36mOffenseCategory Load (0.4ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" WHERE "offense_categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/twitter_profiles_controller.rb:15:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/twitter_profiles_controller.rb:15:in `block in create'
+  [1m[36mProfileOffense Create (0.5ms)[0m  [1m[32mINSERT INTO "profile_offenses" ("twitter_profile_id", "offense_category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["twitter_profile_id", 13], ["offense_category_id", 2], ["created_at", "2020-10-11 18:50:13.092740"], ["updated_at", "2020-10-11 18:50:13.092740"]]
+  ↳ app/controllers/twitter_profiles_controller.rb:15:in `block in create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/twitter_profiles_controller.rb:15:in `block in create'
+  [1m[36mOffenseCategory Load (0.2ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" WHERE "offense_categories"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/twitter_profiles_controller.rb:15:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/twitter_profiles_controller.rb:15:in `block in create'
+  [1m[36mProfileOffense Create (0.5ms)[0m  [1m[32mINSERT INTO "profile_offenses" ("twitter_profile_id", "offense_category_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["twitter_profile_id", 13], ["offense_category_id", 6], ["created_at", "2020-10-11 18:50:13.103327"], ["updated_at", "2020-10-11 18:50:13.103327"]]
+  ↳ app/controllers/twitter_profiles_controller.rb:15:in `block in create'
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/twitter_profiles_controller.rb:15:in `block in create'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.2ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 13]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:19:in `create'
+[active_model_serializers] Rendered TwitterProfileSerializer with ActiveModelSerializers::Adapter::Attributes (6.66ms)
+Completed 200 OK in 37ms (Views: 6.9ms | ActiveRecord: 3.6ms | Allocations: 11798)
+
+
+Started GET "/twitter_profiles" for ::1 at 2020-10-11 13:50:13 -0500
+Processing by TwitterProfilesController#index as */*
+  [1m[36mTwitterProfile Load (0.2ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles"[0m
+  ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.3ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.2ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.2ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 6]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.1ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 7]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.2ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 8]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.2ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 9]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.3ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 10]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.3ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 11]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.2ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 12]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.2ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 13]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (52.58ms)
+Completed 200 OK in 57ms (Views: 54.6ms | ActiveRecord: 2.4ms | Allocations: 19682)
+
+
+Started GET "/twitter_profiles" for ::1 at 2020-10-11 13:50:17 -0500
+Started GET "/offense_categories" for ::1 at 2020-10-11 13:50:17 -0500
+Processing by TwitterProfilesController#index as */*
+Processing by OffenseCategoriesController#index as */*
+  [1m[36mTwitterProfile Load (2.4ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles"[0m
+  ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+  [1m[36mOffenseCategory Load (1.6ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories"[0m
+  ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.9ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (1.0ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (2.4ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (1.4ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (1.2ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 6]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (1.4ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (1.0ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 7]]
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.3ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (1.4ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 8]]
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.3ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 7]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (2.5ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 9]]
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.8ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 8]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (42.07ms)
+[active_model_serializers]   [1m[36mOffenseCategory Load (3.7ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 10]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+Completed 200 OK in 50ms (Views: 42.4ms | ActiveRecord: 6.7ms | Allocations: 23788)
+
+
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.4ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 11]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.2ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 12]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.2ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 13]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (61.41ms)
+Completed 200 OK in 68ms (Views: 51.0ms | ActiveRecord: 16.4ms | Allocations: 32867)
+
+
+Started DELETE "/twitter_profiles/13" for ::1 at 2020-10-11 13:50:29 -0500
+Processing by TwitterProfilesController#destroy as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mTwitterProfile Load (0.3ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" WHERE "twitter_profiles"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/twitter_profiles_controller.rb:37:in `set_prof'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/twitter_profiles_controller.rb:26:in `destroy'
+  [1m[36mOffenseCategory Load (0.2ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 13]]
+  ↳ app/controllers/twitter_profiles_controller.rb:26:in `destroy'
+  [1m[36mProfileOffense Load (0.4ms)[0m  [1m[34mSELECT "profile_offenses".* FROM "profile_offenses" WHERE "profile_offenses"."twitter_profile_id" = $1 AND "profile_offenses"."offense_category_id" IN ($2, $3)[0m  [["twitter_profile_id", 13], ["offense_category_id", 2], ["offense_category_id", 6]]
+  ↳ app/controllers/twitter_profiles_controller.rb:26:in `destroy'
+  [1m[36mProfileOffense Destroy (1.1ms)[0m  [1m[31mDELETE FROM "profile_offenses" WHERE "profile_offenses"."id" = $1[0m  [["id", 13]]
+  ↳ app/controllers/twitter_profiles_controller.rb:26:in `destroy'
+  [1m[36mProfileOffense Destroy (0.9ms)[0m  [1m[31mDELETE FROM "profile_offenses" WHERE "profile_offenses"."id" = $1[0m  [["id", 14]]
+  ↳ app/controllers/twitter_profiles_controller.rb:26:in `destroy'
+  [1m[36mTwitterProfile Destroy (1.0ms)[0m  [1m[31mDELETE FROM "twitter_profiles" WHERE "twitter_profiles"."id" = $1[0m  [["id", 13]]
+  ↳ app/controllers/twitter_profiles_controller.rb:26:in `destroy'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/twitter_profiles_controller.rb:26:in `destroy'
+Completed 204 No Content in 21ms (ActiveRecord: 4.6ms | Allocations: 7091)
+
+
+Started GET "/twitter_profiles" for ::1 at 2020-10-11 13:50:33 -0500
+Started GET "/offense_categories" for ::1 at 2020-10-11 13:50:33 -0500
+Processing by TwitterProfilesController#index as */*
+Processing by OffenseCategoriesController#index as */*
+  [1m[36mTwitterProfile Load (0.7ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles"[0m
+  [1m[36mOffenseCategory Load (0.3ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories"[0m
+  ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+  ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (1.5ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 2]]
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.4ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (2.3ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (1.6ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (1.1ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 6]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (1.1ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 3]]
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.8ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 7]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (2.2ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 6]]
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.4ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 8]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (1.4ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 7]]
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.4ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 9]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (1.6ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 8]]
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.5ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 10]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (55.72ms)
+Completed 200 OK in 62ms (Views: 52.8ms | ActiveRecord: 8.5ms | Allocations: 24837)
+
+
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.4ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 11]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.4ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 12]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (66.53ms)
+Completed 200 OK in 70ms (Views: 61.7ms | ActiveRecord: 8.5ms | Allocations: 30419)
+
+
+Started POST "/offense_categories" for ::1 at 2020-10-11 13:50:53 -0500
+Processing by OffenseCategoriesController#create as */*
+  Parameters: {"name"=>"thing that annoys me", "offense_category"=>{"name"=>"thing that annoys me"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/offense_categories_controller.rb:12:in `create'
+  [1m[36mOffenseCategory Create (0.6ms)[0m  [1m[32mINSERT INTO "offense_categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "thing that annoys me"], ["created_at", "2020-10-11 18:50:53.237001"], ["updated_at", "2020-10-11 18:50:53.237001"]]
+  ↳ app/controllers/offense_categories_controller.rb:12:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/offense_categories_controller.rb:12:in `create'
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.3ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 9]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:13:in `create'
+[active_model_serializers] Rendered OffenseCategorySerializer with ActiveModelSerializers::Adapter::Attributes (2.25ms)
+Completed 200 OK in 11ms (Views: 4.0ms | ActiveRecord: 1.8ms | Allocations: 4236)
+
+
+Started GET "/offense_categories" for ::1 at 2020-10-11 13:50:53 -0500
+Processing by OffenseCategoriesController#index as */*
+  [1m[36mOffenseCategory Load (0.2ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories"[0m
+  ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.3ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.5ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.6ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.3ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.3ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 7]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.2ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 8]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.3ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 9]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (28.88ms)
+Completed 200 OK in 31ms (Views: 28.1ms | ActiveRecord: 2.7ms | Allocations: 14230)
+
+
+Started GET "/offense_categories" for ::1 at 2020-10-11 13:57:59 -0500
+Started GET "/twitter_profiles" for ::1 at 2020-10-11 13:57:59 -0500
+Processing by OffenseCategoriesController#index as */*
+Processing by TwitterProfilesController#index as */*
+  [1m[36mOffenseCategory Load (0.6ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories"[0m
+  ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+  [1m[36mTwitterProfile Load (0.8ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles"[0m
+  ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.7ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (1.3ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 2]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (1.0ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (1.0ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (13.9ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (1.0ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 6]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (1.0ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 6]]
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.4ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 7]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (1.6ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 7]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (1.1ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 8]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.9ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 8]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.9ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 9]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (1.0ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 9]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.9ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 10]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (45.12ms)
+Completed 200 OK in 54ms (Views: 32.5ms | ActiveRecord: 21.2ms | Allocations: 26905)
+
+
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.8ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 11]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.2ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 12]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (56.33ms)
+Completed 200 OK in 60ms (Views: 51.5ms | ActiveRecord: 8.6ms | Allocations: 32193)
+
+
+Started GET "/offense_categories" for ::1 at 2020-10-12 17:53:06 -0500
+Started GET "/twitter_profiles" for ::1 at 2020-10-12 17:53:06 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OffenseCategoriesController#index as */*
+Processing by TwitterProfilesController#index as */*
+  [1m[36mTwitterProfile Load (3.5ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles"[0m
+  [1m[36mOffenseCategory Load (5.8ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories"[0m
+  ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+  ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (1.2ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 2]]
+[active_model_serializers]   [1m[36mTwitterProfile Load (1.2ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.8ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 3]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.8ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.7ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 6]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.7ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.7ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 7]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.7ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.7ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 8]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.7ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 7]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.7ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 9]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.7ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 8]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.7ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 10]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.7ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 9]]
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.7ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 11]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (28.78ms)
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+Completed 200 OK in 79ms (Views: 31.1ms | ActiveRecord: 42.3ms | Allocations: 47098)
+
+
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.3ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 12]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (50.0ms)
+Completed 200 OK in 76ms (Views: 55.1ms | ActiveRecord: 19.2ms | Allocations: 49269)
+
+
+Started GET "/twitter_profiles" for ::1 at 2020-10-12 17:53:50 -0500
+Started GET "/offense_categories" for ::1 at 2020-10-12 17:53:50 -0500
+Processing by TwitterProfilesController#index as */*
+Processing by OffenseCategoriesController#index as */*
+  [1m[36mTwitterProfile Load (0.6ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles"[0m
+  [1m[36mOffenseCategory Load (0.3ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories"[0m
+  ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+  ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (1.2ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 2]]
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.3ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 1]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (14.8ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 3]]
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.3ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 2]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.7ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 6]]
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.2ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 3]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.7ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 7]]
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.2ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 6]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.6ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 8]]
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.2ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 7]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.6ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 9]]
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.2ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 8]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.6ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 10]]
+[active_model_serializers]   [1m[36mTwitterProfile Load (0.2ms)[0m  [1m[34mSELECT "twitter_profiles".* FROM "twitter_profiles" INNER JOIN "profile_offenses" ON "twitter_profiles"."id" = "profile_offenses"."twitter_profile_id" WHERE "profile_offenses"."offense_category_id" = $1[0m  [["offense_category_id", 9]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   ↳ app/controllers/offense_categories_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (35.37ms)
+[active_model_serializers]   [1m[36mOffenseCategory Load (2.3ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 11]]
+Completed 200 OK in 39ms (Views: 37.4ms | ActiveRecord: 1.8ms | Allocations: 26583)
+
+
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mOffenseCategory Load (0.3ms)[0m  [1m[34mSELECT "offense_categories".* FROM "offense_categories" INNER JOIN "profile_offenses" ON "offense_categories"."id" = "profile_offenses"."offense_category_id" WHERE "profile_offenses"."twitter_profile_id" = $1[0m  [["twitter_profile_id", 12]]
+[active_model_serializers]   ↳ app/controllers/twitter_profiles_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (42.88ms)
+Completed 200 OK in 46ms (Views: 23.4ms | ActiveRecord: 22.5ms | Allocations: 32149)
+
+

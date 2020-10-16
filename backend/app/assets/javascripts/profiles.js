@@ -71,4 +71,14 @@ class Profile {
           }
         })
     }   
+    updateProfile() {
+        fetch(`http://localhost:3000/twitter_profiles/${this.id}`, {
+            method: "patch",
+            Headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(this),
+        })
+        .then(res => res.json())
+    }
 }

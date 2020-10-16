@@ -1,24 +1,25 @@
-# README
+# SHAMR FLATIRON SPA w/ API BACKEND
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## About
 
-Things you may want to cover:
+SHAMR is meant to be an exercise in 'bad tech' in that this is not expected to be taken entirely seriously. While watching a PBS broadcast, the topic of the 'Chinese Social Credit System' was covered. You can read more about it here. I undertook this project to explore how tech can be used against us and ways in which it might go wrong.
 
-* Ruby version
+SHAMR can be used to create 'offenders' and associated 'offenses'. These elements are persisted to the backend API and viewable by anyone that visits the site. A user can also enter a twitter user to check if that user follows anyone in the 'offenders' list. 
 
-* System dependencies
+Have fun and don't take this too seriously.
 
-* Configuration
+## Installation
 
-* Database creation
+Navigate to the `backend` folder and run the following command:
 
-* Database initialization
+```ruby
+bundle install
+```
 
-* How to run the test suite
+In the `app` folder open `index.html`
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Navigate back to the `backend` folder and run:
+```ruby
+rails s
+```
+Use control+c to exit.

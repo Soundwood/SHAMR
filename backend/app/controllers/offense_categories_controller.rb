@@ -5,9 +5,9 @@ class OffenseCategoriesController < ApplicationController
         @offenses = OffenseCategory.all
         render json: @offenses
     end
-    def show
-        render json: @offense
-    end
+    # def show
+    #     render json: @offense
+    # end
     def create
         @offense = OffenseCategory.create!(offense_params)
         render json: @offense

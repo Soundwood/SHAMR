@@ -5,9 +5,9 @@ class TwitterProfilesController < ApplicationController
         @profs = TwitterProfile.all
         render json: @profs
     end
-    def show
-        render json: @prof
-    end
+    # def show
+    #     render json: @prof
+    # end
     def create
         @prof = TwitterProfile.create!(prof_params)
         if params[:offense_categories]

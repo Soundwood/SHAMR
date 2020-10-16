@@ -2,7 +2,6 @@ const BASE_URL = 'http://localhost:3000'
 const PROFS_URL = `${BASE_URL}/twitter_profiles`
 const OFFENSES_URL = `${BASE_URL}/offense_categories`
 
-
 document.addEventListener("DOMContentLoaded", () => {
     loadProfiles()
     loadOffenses()
@@ -24,9 +23,13 @@ document.addEventListener("DOMContentLoaded", () => {
         let newTwittOff = new Profile({username: twitterHandle.value, offense_categories: array})
         newTwittOff.createNew()
         // create offender
-    });
+    })
+    let shame = document.getElementById("shame_button")
+    shame.addEventListener("click", (e) => {
+        let shameInput = document.getElementById("shame_input")
+        getFriends(shameInput.value)
+    })
 })
-
 const loadProfiles = () => {
     fetch(PROFS_URL)
     .then(res => res.json())
@@ -40,7 +43,6 @@ const loadProfiles = () => {
         console.log("Profiles Loaded")
     })
 }
-
 const loadOffenses = () => {
     fetch(OFFENSES_URL)
     .then(res => res.json())
@@ -54,9 +56,6 @@ const loadOffenses = () => {
         console.log("Offenses Loaded")
     })
 }
-
-
-
 function showOffenders() {
     let x = document.getElementById("Offenses")
     let y = document.getElementById("Offenders")
@@ -92,8 +91,9 @@ function clearOffenses() {
         offCont.firstChild.remove()
     }
 }
-function scrollToOffenders() {
-    const elmnt = document.getElementById("offenders_offenses");
+function scrollTo(element_id) {
+    const elmnt = document.getElementById(element_id);
     elmnt.scrollIntoView()
 }
+
 // video game - sandwich - diamonds

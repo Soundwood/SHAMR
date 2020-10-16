@@ -5,6 +5,8 @@ ruby '2.6.1'
 gem 'pry'
 gem 'dotenv-rails'
 gem 'active_model_serializers'
+# gem 'twitter' removed to use httparty instead
+gem 'httparty'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
 # Use postgresql as the database for Active Record

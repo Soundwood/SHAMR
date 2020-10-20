@@ -1,5 +1,3 @@
-console.log("Offense class loaded")
-
 class Offense {
     static all = []
 
@@ -58,8 +56,9 @@ class Offense {
             this.id = data.id;
             // debugger
             document.querySelector('input[id=offense_input]').value = "";
-            clearOffenses()
-            loadOffenses()
+            const newOffense = new Offense(data)
+            newOffense.render()
+            newOffense.renderCheckbox()
           }
         })}
 }

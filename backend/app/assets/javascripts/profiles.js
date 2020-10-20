@@ -1,6 +1,3 @@
-console.log("Profile class loaded")
-// https://www.w3schools.com/js/js_reserved.asp
-
 class Profile {
     static all = []
 
@@ -67,7 +64,8 @@ class Profile {
           } else {
             this.id = data.id;
             document.querySelector('input[id=twitter_handle_input]').value = "";
-            loadProfiles()
+            const newProfile = new Profile(data)
+            newProfile.render()
           }
         })
     }   

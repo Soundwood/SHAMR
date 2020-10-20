@@ -80,17 +80,24 @@ function showOffenses() {
         y.style.display = "none"
     }
 }
-function clearOffenses() {
-    let offenderDiv = document.getElementById("Offenses")
-    // debugger
-    let offCont = document.getElementById("off_opt_cont")
-    while (offenderDiv.firstChild) {
-        offenderDiv.firstChild.remove()
-    }
-    while (offCont.firstChild) {
-        offCont.firstChild.remove()
-    }
-}
+// Function not used
+// function clearOffenses() {
+//     let offensesDiv = document.getElementById("Offenses")
+//     let offCont = document.getElementById("off_opt_cont")
+//     while (offensesDiv.firstChild) {
+//         offensesDiv.firstChild.remove()
+//     }
+//     while (offCont.firstChild) {
+//         offCont.firstChild.remove()
+//     }
+// }
+// Function not used
+// function clearOffenders() {
+//     let offenderDiv = document.getElementById("Offenders")
+//     while (offenderDiv.firstChild) {
+//         offenderDiv.firstChild.remove()
+//     }
+// }
 function scrollTo(element_id) {
     const elmnt = document.getElementById(element_id);
     elmnt.scrollIntoView()

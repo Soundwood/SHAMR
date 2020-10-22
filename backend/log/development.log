@@ -25798,3 +25798,88 @@ Processing by TwitterUserInfoController#show as HTML
 Completed 200 OK in 144ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 1297)
 
 
+Started GET "/twitter_user_info/realdonaldtrump" for ::1 at 2020-10-21 20:08:24 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TwitterUserInfoController#show as HTML
+  Parameters: {"id"=>"realdonaldtrump"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with HTTParty::Response (0.53ms)
+Completed 200 OK in 201ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1799)
+
+
+Started GET "/twitter_user_info/barackobama" for ::1 at 2020-10-21 20:09:11 -0500
+Processing by TwitterUserInfoController#show as HTML
+  Parameters: {"id"=>"barackobama"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with HTTParty::Response (0.07ms)
+Completed 200 OK in 194ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 1301)
+
+
+Started GET "/twitter_user_info/katyperry" for ::1 at 2020-10-21 20:09:34 -0500
+Processing by TwitterUserInfoController#show as HTML
+  Parameters: {"id"=>"katyperry"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with HTTParty::Response (0.06ms)
+Completed 200 OK in 199ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1297)
+
+
+Started GET "/twitter_user_info/rihanna" for ::1 at 2020-10-21 20:10:50 -0500
+Processing by TwitterUserInfoController#show as HTML
+  Parameters: {"id"=>"rihanna"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with HTTParty::Response (0.07ms)
+Completed 200 OK in 168ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1299)
+
+
+Started GET "/twitter_user_info/justinbieber" for ::1 at 2020-10-21 20:11:18 -0500
+Processing by TwitterUserInfoController#show as HTML
+  Parameters: {"id"=>"justinbieber"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with HTTParty::Response (0.07ms)
+Completed 200 OK in 187ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1297)
+
+
+Started GET "/twitter_user_info/taylorswift13" for ::1 at 2020-10-21 20:11:47 -0500
+Processing by TwitterUserInfoController#show as HTML
+  Parameters: {"id"=>"taylorswift13"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with HTTParty::Response (0.07ms)
+Completed 200 OK in 154ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1301)
+
+
+Started GET "/twitter_user_info/TheEllenShow" for ::1 at 2020-10-21 20:12:12 -0500
+Processing by TwitterUserInfoController#show as HTML
+  Parameters: {"id"=>"TheEllenShow"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with HTTParty::Response (0.08ms)
+Completed 200 OK in 172ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1302)
+
+
+Started GET "/twitter_user_info/kimkardashian" for ::1 at 2020-10-21 20:12:36 -0500
+Processing by TwitterUserInfoController#show as HTML
+  Parameters: {"id"=>"kimkardashian"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with HTTParty::Response (0.07ms)
+Completed 200 OK in 151ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1301)
+
+
+Started GET "/twitter_user_info/billgates" for ::1 at 2020-10-21 20:13:04 -0500
+Processing by TwitterUserInfoController#show as HTML
+  Parameters: {"id"=>"billgates"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with HTTParty::Response (0.06ms)
+Completed 200 OK in 199ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1298)
+
+
+Started GET "/twitter_user_info/elonmusk" for ::1 at 2020-10-21 20:13:35 -0500
+Processing by TwitterUserInfoController#show as HTML
+  Parameters: {"id"=>"elonmusk"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with HTTParty::Response (0.12ms)
+Completed 200 OK in 212ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 1297)
+
+
+Started GET "/twitter_user_info/britneyspears" for ::1 at 2020-10-21 20:13:57 -0500
+Processing by TwitterUserInfoController#show as HTML
+  Parameters: {"id"=>"britneyspears"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with HTTParty::Response (0.07ms)
+Completed 200 OK in 201ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1297)
+
+
+Started GET "/twitter_user_info/shakira" for ::1 at 2020-10-21 20:14:20 -0500
+Processing by TwitterUserInfoController#show as HTML
+  Parameters: {"id"=>"shakira"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with HTTParty::Response (0.06ms)
+Completed 200 OK in 144ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1297)
+
+

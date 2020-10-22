@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   resources :twitter_profiles, except: [:show]
   resources :offense_categories, except: [:show]
   resources :twitter_gets, only: [:show]
+  resources :twitter_user_info, only: [:show]
   root 'twitter_profiles#index'
 end

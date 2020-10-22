@@ -13,6 +13,7 @@ class Profile {
     }
 
     render() {
+        Profile.all.push(this)
         let profilesDiv = document.getElementById("Offenders")
         let profileCont = document.createElement('div')
         let profileH5 = document.createElement('h5')
@@ -20,7 +21,7 @@ class Profile {
         profileCont.id = `profile_container_for_id${this.id}`
         profilesDiv.appendChild(profileCont)
         button.innerText = `Remove ${this.display_name} from Offenders List`
-        profileH5.innerText = this.display_name
+        profileH5.innerText = `${this.display_name} - @${this.username}`
         profileCont.appendChild(profileH5)
         if (this.offense_categories.length > 0) {
             // debugger
@@ -39,12 +40,14 @@ class Profile {
             } else {
             fetch(`http://localhost:3000/twitter_profiles/${this.id}`, {
               method: "DELETE",
-            }).then(profileCont.remove());
+            }).then(() => {
+                profileCont.remove()
+                Profile.all.pop(this)
+            });
             }
         })
     }
     createNew() {
-        // debugger
         fetch("http://localhost:3000/twitter_profiles", {
             method: "POST",
             headers: {
@@ -52,7 +55,8 @@ class Profile {
             },
             body: JSON.stringify({
                     username: this.username,
-                    display_name: this.username,
+                    user_id: this.user_id,
+                    display_name: this.display_name,
                     offense_categories: this.offense_categories,
                 },
             ),
@@ -64,8 +68,8 @@ class Profile {
           } else {
             this.id = data.id;
             document.querySelector('input[id=twitter_handle_input]').value = "";
-            const newProfile = new Profile(data)
-            newProfile.render()
+            this.render()
+            resetCheckboxes()
           }
         })
     }   

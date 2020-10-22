@@ -5,14 +5,11 @@ class TwitterProfilesController < ApplicationController
         @profs = TwitterProfile.all
         render json: @profs
     end
-    # def show
-    #     render json: @prof
-    # end
     def create
         @prof = TwitterProfile.create!(prof_params)
         if params[:offense_categories]
             params[:offense_categories].each do |offense|
-                @prof.offense_categories << OffenseCategory.find_by_id(offense)
+                @prof.offense_categories << OffenseCategory.find_by_id(offense[:id])
             end
         end
 

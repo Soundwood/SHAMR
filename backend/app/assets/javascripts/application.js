@@ -1,6 +1,7 @@
 const BASE_URL = 'http://localhost:3000'
 const PROFS_URL = `${BASE_URL}/twitter_profiles`
 const OFFENSES_URL = `${BASE_URL}/offense_categories`
+const OFFENSE_URL = `${BASE_URL}/offense_categories/`
 
 document.addEventListener("DOMContentLoaded", () => {
     loadProfiles()
@@ -15,14 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
     createOffenderBtn.addEventListener("click", function(event){
         event.preventDefault()
         let twitterHandle = document.getElementById("twitter_handle_input")
-        var array = []
-        var checkboxes = document.querySelectorAll('input[type=checkbox]:checked')
+        let offensesArray = []
+        let checkboxes = document.querySelectorAll('input[type=checkbox]:checked')
         for (var i = 0; i < checkboxes.length; i++) {
-            array.push(checkboxes[i].id)
+            offensesArray.push(Offense.all.find(x => x.id === parseInt(checkboxes[i].name, 10)))
         }
-        let newTwittOff = new Profile({username: twitterHandle.value, offense_categories: array})
-        newTwittOff.createNew()
-        // create offender
+        getTwitterUserInfo(twitterHandle.value, offensesArray)
     })
     let shame = document.getElementById("shame_button")
     shame.addEventListener("click", (e) => {
@@ -36,8 +35,7 @@ const loadProfiles = () => {
     .then(json => {
         console.log(json)
         json.forEach(function(profile) { 
-            // debugger
-            prof = new Profile(profile)
+            let prof = new Profile(profile)
             prof.render()
         })
         console.log("Profiles Loaded")
@@ -101,6 +99,12 @@ function showOffenses() {
 function scrollTo(element_id) {
     const elmnt = document.getElementById(element_id);
     elmnt.scrollIntoView()
+}
+function resetCheckboxes() {
+    let checkedBoxes = document.querySelectorAll('input[type=checkbox]:checked')
+        for (var i = 0; i < checkedBoxes.length; i++) {
+            document.getElementById(`${checkedBoxes[i].id}`).checked = false
+        }
 }
 
 // video game - sandwich - diamonds

@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2020_10_09_225256) do
 
   create_table "twitter_profiles", force: :cascade do |t|
     t.string "username"
-    t.integer "user_id"
+    t.bigint "user_id"
     t.string "display_name"
     t.boolean "offender"
     t.boolean "irreproachable"

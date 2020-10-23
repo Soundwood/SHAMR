@@ -17,7 +17,7 @@ const getFriends = (username) => {
             friends_ids_list.push(user.id)
         })
         let intersection = offenders_ids.filter(element => friends_ids_list.includes(element))
-        renderSHAME(intersection)
+        renderSHAME(username, intersection)
     })
 }
 function sanitizeUsername(username) {
@@ -40,7 +40,7 @@ function getTwitterUserInfo(username, offensesArray) {
     })
 }
 
-function renderSHAME(intersection_array) {
+function renderSHAME(username, intersection_array) {
     let associatedOffenders = []
     let shameDiv = document.getElementById("shame_response_cont")
     intersection_array.forEach((twitter_user_id) => {
@@ -48,7 +48,7 @@ function renderSHAME(intersection_array) {
     })
     associatedOffenders.forEach((offender) => {
         let offenderH4 = document.createElement('h4')
-        offenderH4.innerText = `Your association with ${offender.display_name} means that you support -`
+        offenderH4.innerText = `${username}'s association with ${offender.display_name} means that they support -`
         shameDiv.appendChild(offenderH4)
         offender.offense_categories.forEach((offense) => {
             let offenseP = document.createElement('P')

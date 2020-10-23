@@ -18,10 +18,14 @@ class Profile {
         let profileCont = document.createElement('div')
         let profileH5 = document.createElement('h5')
         let button = document.createElement('button')
+        let twittLink = document.createElement('a')
+        twittLink.href = `https://twitter.com/${this.username}`
+        twittLink.innerText = `@${this.username}`
         profileCont.id = `profile_container_for_id${this.id}`
         profilesDiv.appendChild(profileCont)
         button.innerText = `Remove ${this.display_name} from Offenders List`
-        profileH5.innerText = `${this.display_name} - @${this.username}`
+        profileH5.innerText = `${this.display_name} - `
+        profileH5.appendChild(twittLink)
         profileCont.appendChild(profileH5)
         if (this.offense_categories.length > 0) {
             // debugger

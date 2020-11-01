@@ -2,24 +2,45 @@ const BASE = 'http://localhost:3000'
 const GETFRIENDS_URL = `${BASE}/twitter_gets`
 const USERINFO_URL = `${BASE}/twitter_user_info/`
 
+let offenders_ids = []
+let fetch_cursor = -1
+let friends_ids_list = []
+
 const getFriends = (username) => {
-    clearSHAME()
+    resetFriends()
     let sanitizedUsername = sanitizeUsername(username)
-    fetch(`${GETFRIENDS_URL}/${sanitizedUsername}`)
-    .then(res => res.json())
-    .then(json => {
-        let friends_ids_list = []
-        let offenders_ids = []
-        Profile.all.forEach((profile) => {
-            offenders_ids.push(profile.user_id)
-        })
-        json.users.forEach((user) => {
-            friends_ids_list.push(user.id)
-        })
-        let intersection = offenders_ids.filter(element => friends_ids_list.includes(element))
-        renderSHAME(username, intersection)
+    getFriendsFetch(sanitizedUsername)
+}
+
+const resetFriends = () => {
+    clearSHAME()
+    fetch_cursor = -1
+    offenders_ids = []
+    friends_ids_list = []
+    Profile.all.forEach((profile) => {
+        offenders_ids.push(profile.user_id)
     })
 }
+
+function getFriendsFetch(sanitizedUsername) {
+    fetch(`${GETFRIENDS_URL}/${sanitizedUsername}&cursor=${fetch_cursor}`)
+        .then(res => res.json())
+        .then(json => {
+            console.log(json)
+            if (json.next_cursor != 0) {
+                fetch_cursor = json.next_cursor
+                json.users.forEach((user) => {
+                    friends_ids_list.push(user.id)})
+                getFriendsFetch(sanitizedUsername)
+            } else {
+                json.users.forEach((user) => {
+                    friends_ids_list.push(user.id)})
+                let intersection = offenders_ids.filter(element => friends_ids_list.includes(element))
+                renderSHAME(sanitizedUsername, intersection)
+            }
+        })
+}
+
 function sanitizeUsername(username) {
     if (username[0] === "@") {
         return username.substring(1)

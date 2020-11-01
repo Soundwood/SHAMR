@@ -10,10 +10,10 @@ class Profile {
         this.irreproachable = irreproachable
         this.created_at = created_at
         this.offense_categories = offense_categories
+        Profile.all.push(this)
     }
 
     render() {
-        Profile.all.push(this)
         let profilesDiv = document.getElementById("Offenders")
         let profileCont = document.createElement('div')
         let profileH5 = document.createElement('h5')
@@ -22,6 +22,7 @@ class Profile {
         twittLink.href = `https://twitter.com/${this.username}`
         twittLink.innerText = `@${this.username}`
         profileCont.id = `profile_container_for_id${this.id}`
+        profileCont.className = "w3-col s6 w3-center"
         profilesDiv.appendChild(profileCont)
         button.innerText = `Remove ${this.display_name} from Offenders List`
         profileH5.innerText = `${this.display_name} - `

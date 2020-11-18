@@ -8,6 +8,8 @@ SHAMR can be used to create 'offenders' and associated 'offenses'. These element
 
 Have fun and don't take this too seriously.
 
+![Shamer GIF](app/assets/images/SHAMR_SCROLL.gif)
+
 ## Installation
 
 Navigate to the `backend` folder and run the following command:

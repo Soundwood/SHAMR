@@ -1,6 +1,6 @@
 const BASE = 'http://localhost:3000'
 const GETFRIENDS_URL = `${BASE}/twitter_gets`
-const USERINFO_URL = `${BASE}/twitter_user_info/`
+const USERINFO_URL = `${BASE}/twitter_user_info`
 
 let offenders_ids = []
 let fetch_cursor = -1
@@ -50,7 +50,7 @@ function sanitizeUsername(username) {
 }
 function getTwitterUserInfo(username, offensesArray) {
     let sanitizedUsername = sanitizeUsername(username)
-    fetch(`${USERINFO_URL}${sanitizedUsername}`)
+    fetch(`${USERINFO_URL}/${sanitizedUsername}`)
     .then(res => res.json())
     .then(json => {
         let newTwittOff = new Profile(

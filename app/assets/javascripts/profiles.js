@@ -69,7 +69,7 @@ class Profile {
         .then((resp) => resp.json())
         .then((data) => {
           if (data.errors) {
-            console.log(info.errors);
+            console.log(data.errors);
           } else {
             this.id = data.id;
             document.querySelector('input[id=twitter_handle_input]').value = "";

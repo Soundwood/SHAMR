@@ -12,7 +12,7 @@ Have fun and don't take this too seriously.
 
 ## Installation
 
-Navigate to the `backend` folder and run the following command:
+Navigate to the `SHAMR` folder and run the following command:
 
 ```ruby
 bundle install
@@ -20,8 +20,14 @@ bundle install
 
 In the `app` folder open `index.html`
 
-Navigate back to the `backend` folder and run:
+Navigate back to the `SHAMR` folder and run:
 ```ruby
+rails db:create
+
+rails db:migrate
+
+rails db:seed
+
 rails s
 ```
 Use control+c to exit.
